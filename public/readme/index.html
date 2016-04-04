@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-uk">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <title> - Text Analysis Using R</title>
+    <meta name="generator" content="Hugo 0.15" />
+
+    
+    <meta name="description" content="Text Analysis Using R.">
+    
+    <link rel="canonical" href="http://localhost/readme/">
+    
+    <meta name="author" content="Kenneth Benoit">
+    
+
+    <meta property="og:url" content="http://localhost/readme/">
+    <meta property="og:title" content="Text Analysis Using R">
+    <meta property="og:image" content="http://localhost/images/logo.png">
+    <meta name="apple-mobile-web-app-title" content="Text Analysis Using R">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://localhost/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://localhost/images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('http://localhost/fonts/icon.eot?52m981');
+        src: url('http://localhost/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+             url('http://localhost/fonts/icon.woff?52m981')
+               format('woff'),
+             url('http://localhost/fonts/icon.ttf?52m981')
+               format('truetype'),
+             url('http://localhost/fonts/icon.svg?52m981#icon')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="http://localhost/stylesheets/application.css">
+    <link rel="stylesheet" href="http://localhost/stylesheets/palettes.css">
+    <link rel="stylesheet" href="http://localhost/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu%2bMono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+    
+    
+    <script src="http://localhost/javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-indigo palette-accent-B0BEC5">
+
+
+
+	
+	
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+      </div>
+    </div>
+
+    
+    <div class="button button-twitter" role="button" aria-label="Twitter">
+       <a href="https://twitter.com/kenbenoit" title="@kenbenoit on Twitter" target="_blank" class="toggle-button icon icon-twitter"></a>
+    </div>
+    
+
+    
+    <div class="button button-github" role="button" aria-label="GitHub">
+      <a href="https://github.com/kbenoit" title="@kbenoit on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+    </div>
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="https://github.com/kbenoit/TAUR" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="http://localhost/images/logo.png">
+        </div>
+      
+      <div class="name">
+        <strong>Text Analysis Using R <span class="version">1.0.0</span></strong>
+        
+          <br>
+          kbenoit/TAUR
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+        <ul class="repo">
+          <li class="repo-download">
+            <a href="https://github.com/kbenoit/TAUR/archive/master.zip" target="_blank" title="Download" data-action="download">
+              <i class="icon icon-download"></i> Download
+            </a>
+          </li>
+          <li class="repo-stars">
+            <a href="https://github.com/kbenoit/TAUR/stargazers" target="_blank" title="Stargazers" data-action="star">
+              <i class="icon icon-star"></i> Stars
+              <span class="count">&ndash;</span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+<a  title="Material" href="http://localhost/">
+	Material
+</a>
+
+  
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+<a  title="Getting started" href="http://localhost/getting-started/">
+	Getting started
+</a>
+
+  
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+<a  title="Adding content" href="http://localhost/adding-content/">
+	Adding content
+</a>
+
+  
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+<a  title="Roadmap" href="http://localhost/roadmap/">
+	Roadmap
+</a>
+
+  
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+<a class="current" title="Read me" href="http://localhost/readme/">
+	Read me
+</a>
+
+
+<ul id="scrollspy">
+</ul>
+  
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+<a  title="License" href="http://localhost/license/">
+	License
+</a>
+
+  
+  
+</li>
+
+        </ul>
+        
+
+        
+        <hr>
+        <span class="section">The author</span>
+        
+        <ul>
+          
+          <li>
+            <a href="https://twitter.com/kenbenoit" target="_blank" title="@kenbenoit on Twitter">
+              @kenbenoit on Twitter
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://github.com/kbenoit" target="_blank" title="@kbenoit on GitHub">
+              @kbenoit on GitHub
+            </a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1> </h1>
+
+			
+
+<p>See the <a href="http://htmlpreview.github.com/?https://github.com/kbenoit/quanteda/blob/master/vignettes/quickstart.html">Getting Started Vignette</a>.</p>
+
+<h1 id="quanteda-quantitative-analysis-of-textual-data">quanteda: Quantitative Analysis of Textual Data</h1>
+
+<p>An R package for managing and analyzing text, by Ken Benoit and Paul Nulty.</p>
+
+<p><strong>quanteda</strong> makes it easy to manage texts in the form of a corpus, defined as a collection of texts that includes document-level variables specific to each text, as well as meta-data for documents and for the collection as a whole. <strong>quanteda</strong> includes tools to make it easy and fast to manuipulate the texts in a corpus, by performing the most common natural language processing tasks simply and quickly, such as tokenizing, stemming, or forming ngrams. <strong>quanteda</strong>&rsquo;s functions for tokenizing texts and forming multiple tokenized documents into a <em>document-feature matrix</em> are both extremely fast and extremely simple to use. <strong>quanteda</strong> can segment texts easily by words, paragraphs, sentences, or even user-supplied delimiters and tags.</p>
+
+<p>Built on the text processing functions in the <strong>stringi</strong> package, which is in turn built on C++ implementation of the <a href="http://www.icu-project.org/">ICU</a> libraries for Unicode text handling, <strong>quanteda</strong> pays special attention to fast and correct implementation of Unicode and the handling of text in any character set, following conversion internally to UTF-8.</p>
+
+<p><strong>quanteda</strong> is built for efficiency and speed, through its design around three infrastructures: the <strong>stringi</strong> package for text processing, the <strong>data.table</strong> package for indexing large documents efficiently, and the <strong>Matrix</strong> package for sparse matrix objects. If you can fit it into memory, <strong>quanteda</strong> will handle it quickly. (And eventually, we will make it possible to process objects even larger than available memory.)</p>
+
+<p><strong>quanteda</strong> is principally designed to allow users a fast and convenient method to go from a corpus of texts to a selected matrix of documents by features, after defining what the documents and features. The package makes it easy to redefine documents, for instance by splitting them into sentences or paragraphs, or by tags, as well as to group them into larger documents by document variables, or to subset them based on logical conditions or combinations of document variables. The package also implements common NLP feature selection functions, such as removing stopwords and stemming in numerous languages, selecting words found in dictionaries, treating words as equivalent based on a user-defined &ldquo;thesaurus&rdquo;, and trimming and weighting features based on document frequency, feature frequency, and related measures such as <em>tf-idf</em>.</p>
+
+<p>Once constructed, a <strong>quanteda</strong> &ldquo;dfm&rdquo;&rdquo; can be easily analyzed using either quanteda&rsquo;s built-in tools for scaling document positions, or used with a number of other text analytic tools, such as:</p>
+
+<ul>
+<li><p>topic models (including converters for direct use with the <strong>topicmodels</strong>, <strong>LDA</strong>, and <strong>stm</strong> packages)</p></li>
+
+<li><p>document scaling (using <strong>quanteda</strong>&rsquo;s own functions for the &ldquo;wordfish&rdquo; and &ldquo;Wordscores&rdquo; models, direct use with the <strong>ca</strong> package for correspondence analysis, or scaling with the <strong>austin</strong> package)</p></li>
+
+<li><p>machine learning through a variety of other packages that take matrix or matrix-like inputs.</p></li>
+</ul>
+
+<p><strong>Additional features</strong> of quanteda include:</p>
+
+<ul>
+<li><p>the ability to explore texts using <em>key-words-in-context</em>;</p></li>
+
+<li><p>fast computation of a variety of readability indexes;</p></li>
+
+<li><p>fast computation of a variety of lexical diversity measures;</p></li>
+
+<li><p>quick computation of word or document association measures, for clustering or to compute similarity scores for other purposes; and</p></li>
+
+<li><p>a comprehensive suite of descriptive statistics on text such as the number of sentences, words, characters, or syllables per document.</p></li>
+</ul>
+
+<p><strong>Planned features</strong> coming soon to <strong>quanteda</strong> are:</p>
+
+<ul>
+<li><p>bootstrapping methods for texts that makes it easy to resample texts from pre-defined units, to facilitate computation of confidence intervals on textual statistics using techniques of non-parametric bootstrapping, but applied to the original texts as data.</p></li>
+
+<li><p>expansion of the document-feature matrix structure through a standard interface called <code>textmodel()</code>. (As of version 0.8.0, textmodel works in a basic fashion only for the &ldquo;Wordscores&rdquo; and &ldquo;wordfish&rdquo; scaling models.)</p></li>
+</ul>
+
+<h2 id="how-to-install">How to Install</h2>
+
+<p>As of version 0.8.0, the GitHub master repository will always contain the development version of quanteda, while the CRAN version will contain the latest &ldquo;stable&rdquo; version. You therefore have two options for installing the package:</p>
+
+<ol>
+<li><p>From CRAN, using your R package installer, or simply</p>
+
+<pre><code>install.packages(&quot;quanteda&quot;)
+</code></pre></li>
+
+<li><p>(For the development version) From GitHub, using</p>
+
+<pre><code>devtools::install_github(&quot;kbenoit/quanteda&quot;)
+</code></pre>
+
+<p>Because this compiles some C++ source code, you will need a compiler installed. If you are using a Windows platform, this means you will need also to install the <a href="http://cran.r-project.org/bin/windows/Rtools/">Rtools</a> software available from CRAN. If you are using OS X, you will probably need to install XCode, available for free from the App Store.</p></li>
+
+<li><p>(Optional) You can install some additional corpus data from <strong>quantedaData</strong> using</p>
+
+<pre><code class="language-s">## devtools required to install quanteda from Github
+devtools::install_github(&quot;kbenoit/quantedaData&quot;)
+</code></pre></li>
+</ol>
+
+<h2 id="documentation">Documentation</h2>
+
+<p>In-depth tutorials in the form of a gitbook will be available here <a href="http://kbenoit.github.io/quanteda">here</a>.</p>
+
+<p>Examples for any function can also be seen using (for instance, for <code>corpus()</code>):</p>
+
+<pre><code class="language-s">example(corpus)
+</code></pre>
+
+<p>There are also some demo functions that show off some of the package capabilities, such as <code>demo(quanteda)</code>.</p>
+
+<h2 id="example">Example</h2>
+
+<pre><code class="language-r">library(quanteda)
+#&gt; 
+#&gt; Attaching package: 'quanteda'
+#&gt; The following object is masked from 'package:stats':
+#&gt; 
+#&gt;     df
+#&gt; The following object is masked from 'package:base':
+#&gt; 
+#&gt;     sample
+# create a corpus from the immigration texts from UK party platforms
+uk2010immigCorpus &lt;- corpus(ukimmigTexts,
+                            docvars=data.frame(party=names(ukimmigTexts)),
+                            notes=&quot;Immigration-related sections of 2010 UK party manifestos&quot;,
+                            enc=&quot;UTF-8&quot;)
+#&gt; Warning in corpus.character(ukimmigTexts, docvars = data.frame(party =
+#&gt; names(ukimmigTexts)), : Argument enc not used.
+uk2010immigCorpus
+#&gt; Corpus consisting of 9 documents.
+summary(uk2010immigCorpus, showmeta=TRUE)
+#&gt; Corpus consisting of 9 documents.
+#&gt; 
+#&gt;          Text Types Tokens Sentences        party
+#&gt;           BNP  1126   3330        88          BNP
+#&gt;     Coalition   144    268         4    Coalition
+#&gt;  Conservative   252    503        15 Conservative
+#&gt;        Greens   325    687        21       Greens
+#&gt;        Labour   296    703        29       Labour
+#&gt;        LibDem   257    499        14       LibDem
+#&gt;            PC    80    118         5           PC
+#&gt;           SNP    90    136         4          SNP
+#&gt;          UKIP   346    739        27         UKIP
+#&gt; 
+#&gt; Source:  /Users/kbenoit/Dropbox/Sites/TAUR/content/readme/* on x86_64 by kbenoit
+#&gt; Created: Mon Apr  4 11:33:14 2016
+#&gt; Notes:   Immigration-related sections of 2010 UK party manifestos
+
+# key words in context for &quot;deport&quot;, 3 words of context
+kwic(uk2010immigCorpus, &quot;deport&quot;, 3)
+#&gt;                        contextPre keyword                contextPost
+#&gt;  [BNP, 159]        The BNP will [  deport ] all foreigners convicted
+#&gt; [BNP, 1970]                . 2. [  Deport ] all illegal immigrants  
+#&gt; [BNP, 1976] immigrants We shall [  deport ] all illegal immigrants  
+#&gt; [BNP, 2621]  Criminals We shall [  deport ] all criminal entrants
+
+# create a dfm, removing stopwords
+mydfm &lt;- dfm(uk2010immigCorpus, ignoredFeatures=c(&quot;will&quot;, stopwords(&quot;english&quot;)))
+#&gt; Creating a dfm from a corpus ...
+#&gt;    ... lowercasing
+#&gt;    ... tokenizing
+#&gt;    ... indexing documents: 9 documents
+#&gt;    ... indexing features: 1,586 feature types
+#&gt;    ... removed 97 features, from 175 supplied (glob) feature types
+#&gt;    ... created a 9 x 1489 sparse dfm
+#&gt;    ... complete. 
+#&gt; Elapsed time: 0.037 seconds.
+dim(mydfm)              # basic dimensions of the dfm
+#&gt; [1]    9 1489
+topfeatures(mydfm, 20)  # 20 top words
+#&gt; immigration     british      people      asylum     britain          uk 
+#&gt;          66          37          35          29          28          27 
+#&gt;      system  population     country         new  immigrants      ensure 
+#&gt;          27          21          20          19          17          17 
+#&gt;       shall citizenship      social    national         bnp     illegal 
+#&gt;          17          16          14          14          13          13 
+#&gt;        work     percent 
+#&gt;          13          12
+plot(mydfm, min.freq = 6, random.order = FALSE)             # word cloud     
+</code></pre>
+
+<p><img src="README-quanteda_example-1.png" alt="" /><!-- --></p>
+
+			
+			<aside class="copyright" role="note">
+				
+				&copy; 2016 Released under the MIT license &ndash;
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">
+					Material
+				</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+  </div>
+
+  <div class="next">
+  
+      <a href="http://localhost/" title="Material for Hugo">
+        <span class="direction">
+          Next
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              Material for Hugo
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+</nav>
+
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = 'http:\/\/localhost\/';
+      var repo_id  = 'kbenoit\/TAUR';
+    
+    </script>
+
+    <script src="http://localhost/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(headers.length > 0) {
+        for(var i = 0; i < headers.length; i++) {
+          var li = document.createElement("li");
+          li.setAttribute("class", "anchor");
+
+          var a  = document.createElement("a");
+          a.setAttribute("href", "#" + headers[i].id);
+          a.setAttribute("title", headers[i].innerHTML);
+          a.innerHTML = headers[i].innerHTML;
+          
+          li.appendChild(a)
+          scrollspy.appendChild(li);
+        }
+      } else {
+        scrollspy.parentElement.removeChild(scrollspy)
+      }
+      
+
+      /* Add permanent link next to the headers */
+      var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+      for(var i = 0; i < headers.length; i++) {
+          var a = document.createElement("a");
+          a.setAttribute("class", "headerlink");
+          a.setAttribute("href", "#" + headers[i].id);
+          a.setAttribute("title", "Permanent link")
+          a.innerHTML = "#";
+          headers[i].appendChild(a);
+      }
+    </script>
+
+    
+
+    <script src="//gohugo.io/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Readmes on Text Analysis Using R</title>
+    <link>http://localhost/readme/</link>
+    <description>Recent content in Readmes on Text Analysis Using R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <atom:link href="http://localhost/readme/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title></title>
+      <link>http://localhost/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/readme/</guid>
+      <description>
+
+&lt;p&gt;See the &lt;a href=&#34;http://htmlpreview.github.com/?https://github.com/kbenoit/quanteda/blob/master/vignettes/quickstart.html&#34;&gt;Getting Started Vignette&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;quanteda-quantitative-analysis-of-textual-data&#34;&gt;quanteda: Quantitative Analysis of Textual Data&lt;/h1&gt;
+
+&lt;p&gt;An R package for managing and analyzing text, by Ken Benoit and Paul Nulty.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;quanteda&lt;/strong&gt; makes it easy to manage texts in the form of a corpus, defined as a collection of texts that includes document-level variables specific to each text, as well as meta-data for documents and for the collection as a whole. &lt;strong&gt;quanteda&lt;/strong&gt; includes tools to make it easy and fast to manuipulate the texts in a corpus, by performing the most common natural language processing tasks simply and quickly, such as tokenizing, stemming, or forming ngrams. &lt;strong&gt;quanteda&lt;/strong&gt;&amp;rsquo;s functions for tokenizing texts and forming multiple tokenized documents into a &lt;em&gt;document-feature matrix&lt;/em&gt; are both extremely fast and extremely simple to use. &lt;strong&gt;quanteda&lt;/strong&gt; can segment texts easily by words, paragraphs, sentences, or even user-supplied delimiters and tags.&lt;/p&gt;
+
+&lt;p&gt;Built on the text processing functions in the &lt;strong&gt;stringi&lt;/strong&gt; package, which is in turn built on C++ implementation of the &lt;a href=&#34;http://www.icu-project.org/&#34;&gt;ICU&lt;/a&gt; libraries for Unicode text handling, &lt;strong&gt;quanteda&lt;/strong&gt; pays special attention to fast and correct implementation of Unicode and the handling of text in any character set, following conversion internally to UTF-8.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;quanteda&lt;/strong&gt; is built for efficiency and speed, through its design around three infrastructures: the &lt;strong&gt;stringi&lt;/strong&gt; package for text processing, the &lt;strong&gt;data.table&lt;/strong&gt; package for indexing large documents efficiently, and the &lt;strong&gt;Matrix&lt;/strong&gt; package for sparse matrix objects. If you can fit it into memory, &lt;strong&gt;quanteda&lt;/strong&gt; will handle it quickly. (And eventually, we will make it possible to process objects even larger than available memory.)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;quanteda&lt;/strong&gt; is principally designed to allow users a fast and convenient method to go from a corpus of texts to a selected matrix of documents by features, after defining what the documents and features. The package makes it easy to redefine documents, for instance by splitting them into sentences or paragraphs, or by tags, as well as to group them into larger documents by document variables, or to subset them based on logical conditions or combinations of document variables. The package also implements common NLP feature selection functions, such as removing stopwords and stemming in numerous languages, selecting words found in dictionaries, treating words as equivalent based on a user-defined &amp;ldquo;thesaurus&amp;rdquo;, and trimming and weighting features based on document frequency, feature frequency, and related measures such as &lt;em&gt;tf-idf&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Once constructed, a &lt;strong&gt;quanteda&lt;/strong&gt; &amp;ldquo;dfm&amp;rdquo;&amp;rdquo; can be easily analyzed using either quanteda&amp;rsquo;s built-in tools for scaling document positions, or used with a number of other text analytic tools, such as:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;topic models (including converters for direct use with the &lt;strong&gt;topicmodels&lt;/strong&gt;, &lt;strong&gt;LDA&lt;/strong&gt;, and &lt;strong&gt;stm&lt;/strong&gt; packages)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;document scaling (using &lt;strong&gt;quanteda&lt;/strong&gt;&amp;rsquo;s own functions for the &amp;ldquo;wordfish&amp;rdquo; and &amp;ldquo;Wordscores&amp;rdquo; models, direct use with the &lt;strong&gt;ca&lt;/strong&gt; package for correspondence analysis, or scaling with the &lt;strong&gt;austin&lt;/strong&gt; package)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;machine learning through a variety of other packages that take matrix or matrix-like inputs.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Additional features&lt;/strong&gt; of quanteda include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;the ability to explore texts using &lt;em&gt;key-words-in-context&lt;/em&gt;;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;fast computation of a variety of readability indexes;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;fast computation of a variety of lexical diversity measures;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;quick computation of word or document association measures, for clustering or to compute similarity scores for other purposes; and&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;a comprehensive suite of descriptive statistics on text such as the number of sentences, words, characters, or syllables per document.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Planned features&lt;/strong&gt; coming soon to &lt;strong&gt;quanteda&lt;/strong&gt; are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;bootstrapping methods for texts that makes it easy to resample texts from pre-defined units, to facilitate computation of confidence intervals on textual statistics using techniques of non-parametric bootstrapping, but applied to the original texts as data.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;expansion of the document-feature matrix structure through a standard interface called &lt;code&gt;textmodel()&lt;/code&gt;. (As of version 0.8.0, textmodel works in a basic fashion only for the &amp;ldquo;Wordscores&amp;rdquo; and &amp;ldquo;wordfish&amp;rdquo; scaling models.)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;how-to-install&#34;&gt;How to Install&lt;/h2&gt;
+
+&lt;p&gt;As of version 0.8.0, the GitHub master repository will always contain the development version of quanteda, while the CRAN version will contain the latest &amp;ldquo;stable&amp;rdquo; version. You therefore have two options for installing the package:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;From CRAN, using your R package installer, or simply&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;install.packages(&amp;quot;quanteda&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(For the development version) From GitHub, using&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;devtools::install_github(&amp;quot;kbenoit/quanteda&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Because this compiles some C++ source code, you will need a compiler installed. If you are using a Windows platform, this means you will need also to install the &lt;a href=&#34;http://cran.r-project.org/bin/windows/Rtools/&#34;&gt;Rtools&lt;/a&gt; software available from CRAN. If you are using OS X, you will probably need to install XCode, available for free from the App Store.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(Optional) You can install some additional corpus data from &lt;strong&gt;quantedaData&lt;/strong&gt; using&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-s&#34;&gt;## devtools required to install quanteda from Github
+devtools::install_github(&amp;quot;kbenoit/quantedaData&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;documentation&#34;&gt;Documentation&lt;/h2&gt;
+
+&lt;p&gt;In-depth tutorials in the form of a gitbook will be available here &lt;a href=&#34;http://kbenoit.github.io/quanteda&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Examples for any function can also be seen using (for instance, for &lt;code&gt;corpus()&lt;/code&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-s&#34;&gt;example(corpus)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There are also some demo functions that show off some of the package capabilities, such as &lt;code&gt;demo(quanteda)&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(quanteda)
+#&amp;gt; 
+#&amp;gt; Attaching package: &#39;quanteda&#39;
+#&amp;gt; The following object is masked from &#39;package:stats&#39;:
+#&amp;gt; 
+#&amp;gt;     df
+#&amp;gt; The following object is masked from &#39;package:base&#39;:
+#&amp;gt; 
+#&amp;gt;     sample
+# create a corpus from the immigration texts from UK party platforms
+uk2010immigCorpus &amp;lt;- corpus(ukimmigTexts,
+                            docvars=data.frame(party=names(ukimmigTexts)),
+                            notes=&amp;quot;Immigration-related sections of 2010 UK party manifestos&amp;quot;,
+                            enc=&amp;quot;UTF-8&amp;quot;)
+#&amp;gt; Warning in corpus.character(ukimmigTexts, docvars = data.frame(party =
+#&amp;gt; names(ukimmigTexts)), : Argument enc not used.
+uk2010immigCorpus
+#&amp;gt; Corpus consisting of 9 documents.
+summary(uk2010immigCorpus, showmeta=TRUE)
+#&amp;gt; Corpus consisting of 9 documents.
+#&amp;gt; 
+#&amp;gt;          Text Types Tokens Sentences        party
+#&amp;gt;           BNP  1126   3330        88          BNP
+#&amp;gt;     Coalition   144    268         4    Coalition
+#&amp;gt;  Conservative   252    503        15 Conservative
+#&amp;gt;        Greens   325    687        21       Greens
+#&amp;gt;        Labour   296    703        29       Labour
+#&amp;gt;        LibDem   257    499        14       LibDem
+#&amp;gt;            PC    80    118         5           PC
+#&amp;gt;           SNP    90    136         4          SNP
+#&amp;gt;          UKIP   346    739        27         UKIP
+#&amp;gt; 
+#&amp;gt; Source:  /Users/kbenoit/Dropbox/Sites/TAUR/content/readme/* on x86_64 by kbenoit
+#&amp;gt; Created: Mon Apr  4 11:33:14 2016
+#&amp;gt; Notes:   Immigration-related sections of 2010 UK party manifestos
+
+# key words in context for &amp;quot;deport&amp;quot;, 3 words of context
+kwic(uk2010immigCorpus, &amp;quot;deport&amp;quot;, 3)
+#&amp;gt;                        contextPre keyword                contextPost
+#&amp;gt;  [BNP, 159]        The BNP will [  deport ] all foreigners convicted
+#&amp;gt; [BNP, 1970]                . 2. [  Deport ] all illegal immigrants  
+#&amp;gt; [BNP, 1976] immigrants We shall [  deport ] all illegal immigrants  
+#&amp;gt; [BNP, 2621]  Criminals We shall [  deport ] all criminal entrants
+
+# create a dfm, removing stopwords
+mydfm &amp;lt;- dfm(uk2010immigCorpus, ignoredFeatures=c(&amp;quot;will&amp;quot;, stopwords(&amp;quot;english&amp;quot;)))
+#&amp;gt; Creating a dfm from a corpus ...
+#&amp;gt;    ... lowercasing
+#&amp;gt;    ... tokenizing
+#&amp;gt;    ... indexing documents: 9 documents
+#&amp;gt;    ... indexing features: 1,586 feature types
+#&amp;gt;    ... removed 97 features, from 175 supplied (glob) feature types
+#&amp;gt;    ... created a 9 x 1489 sparse dfm
+#&amp;gt;    ... complete. 
+#&amp;gt; Elapsed time: 0.037 seconds.
+dim(mydfm)              # basic dimensions of the dfm
+#&amp;gt; [1]    9 1489
+topfeatures(mydfm, 20)  # 20 top words
+#&amp;gt; immigration     british      people      asylum     britain          uk 
+#&amp;gt;          66          37          35          29          28          27 
+#&amp;gt;      system  population     country         new  immigrants      ensure 
+#&amp;gt;          27          21          20          19          17          17 
+#&amp;gt;       shall citizenship      social    national         bnp     illegal 
+#&amp;gt;          17          16          14          14          13          13 
+#&amp;gt;        work     percent 
+#&amp;gt;          13          12
+plot(mydfm, min.freq = 6, random.order = FALSE)             # word cloud     
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;README-quanteda_example-1.png&#34; alt=&#34;&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
