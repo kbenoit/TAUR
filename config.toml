@@ -30,7 +30,7 @@ googleAnalytics = ""
 	# Syntax highlighting theme
 	highlight_css  = ""
 
-	PygmentsCodeFences = true
+	# PygmentsCodeFences = true
 	pygmentsuseclasses = true
 
 	[params.palette]
