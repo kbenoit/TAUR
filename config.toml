@@ -1,4 +1,4 @@
-baseurl = "http://localhost/"
+baseurl = "http://kbenoit.github.io/testing/"
 languageCode = "en-uk"
 title = "Text Analysis Using R"
 theme = "hugo-material-docs"
