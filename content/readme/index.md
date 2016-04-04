@@ -46,24 +46,24 @@ As of version 0.8.0, the GitHub master repository will always contain the develo
 
 1.  From CRAN, using your R package installer, or simply
 
-	```
-	install.packages("quanteda")
-	```
+    ``` r
+    install.packages("quanteda")
+    ```
 
 2.  (For the development version) From GitHub, using
 
-	```
-	devtools::install_github("kbenoit/quanteda")
-	```
+    ``` r
+    devtools::install_github("kbenoit/quanteda")
+    ```
 
     Because this compiles some C++ source code, you will need a compiler installed. If you are using a Windows platform, this means you will need also to install the [Rtools](http://cran.r-project.org/bin/windows/Rtools/) software available from CRAN. If you are using OS X, you will probably need to install XCode, available for free from the App Store.
 
 3.  (Optional) You can install some additional corpus data from **quantedaData** using
 
-	``` s
-	## devtools required to install quanteda from Github
-	devtools::install_github("kbenoit/quantedaData")
-	```
+    ``` r
+    ## devtools required to install quanteda from Github
+    devtools::install_github("kbenoit/quantedaData")
+    ```
 
 Documentation
 -------------
@@ -72,7 +72,7 @@ In-depth tutorials in the form of a gitbook will be available here [here](http:/
 
 Examples for any function can also be seen using (for instance, for `corpus()`):
 
-``` s
+``` r
 example(corpus)
 ```
 
@@ -83,71 +83,103 @@ Example
 
 ``` r
 library(quanteda)
-#> 
-#> Attaching package: 'quanteda'
-#> The following object is masked from 'package:stats':
-#> 
-#>     df
-#> The following object is masked from 'package:base':
-#> 
-#>     sample
+```
+
+    ## 
+    ## Attaching package: 'quanteda'
+
+    ## The following object is masked from 'package:stats':
+    ## 
+    ##     df
+
+    ## The following object is masked from 'package:base':
+    ## 
+    ##     sample
+
+``` r
 # create a corpus from the immigration texts from UK party platforms
 uk2010immigCorpus <- corpus(ukimmigTexts,
                             docvars=data.frame(party=names(ukimmigTexts)),
                             notes="Immigration-related sections of 2010 UK party manifestos",
                             enc="UTF-8")
-#> Warning in corpus.character(ukimmigTexts, docvars = data.frame(party =
-#> names(ukimmigTexts)), : Argument enc not used.
-uk2010immigCorpus
-#> Corpus consisting of 9 documents.
-summary(uk2010immigCorpus, showmeta=TRUE)
-#> Corpus consisting of 9 documents.
-#> 
-#>          Text Types Tokens Sentences        party
-#>           BNP  1126   3330        88          BNP
-#>     Coalition   144    268         4    Coalition
-#>  Conservative   252    503        15 Conservative
-#>        Greens   325    687        21       Greens
-#>        Labour   296    703        29       Labour
-#>        LibDem   257    499        14       LibDem
-#>            PC    80    118         5           PC
-#>           SNP    90    136         4          SNP
-#>          UKIP   346    739        27         UKIP
-#> 
-#> Source:  /Users/kbenoit/Dropbox/Sites/TAUR/content/readme/* on x86_64 by kbenoit
-#> Created: Mon Apr  4 11:33:14 2016
-#> Notes:   Immigration-related sections of 2010 UK party manifestos
+```
 
+    ## Warning in corpus.character(ukimmigTexts, docvars = data.frame(party =
+    ## names(ukimmigTexts)), : Argument enc not used.
+
+``` r
+uk2010immigCorpus
+```
+
+    ## Corpus consisting of 9 documents.
+
+``` r
+summary(uk2010immigCorpus, showmeta=TRUE)
+```
+
+    ## Corpus consisting of 9 documents.
+    ## 
+    ##          Text Types Tokens Sentences        party
+    ##           BNP  1126   3330        88          BNP
+    ##     Coalition   144    268         4    Coalition
+    ##  Conservative   252    503        15 Conservative
+    ##        Greens   325    687        21       Greens
+    ##        Labour   296    703        29       Labour
+    ##        LibDem   257    499        14       LibDem
+    ##            PC    80    118         5           PC
+    ##           SNP    90    136         4          SNP
+    ##          UKIP   346    739        27         UKIP
+    ## 
+    ## Source:  /Users/kbenoit/Dropbox/GitHub/testing/content/readme/* on x86_64 by kbenoit
+    ## Created: Mon Apr  4 15:02:03 2016
+    ## Notes:   Immigration-related sections of 2010 UK party manifestos
+
+``` r
 # key words in context for "deport", 3 words of context
 kwic(uk2010immigCorpus, "deport", 3)
-#>                        contextPre keyword                contextPost
-#>  [BNP, 159]        The BNP will [  deport ] all foreigners convicted
-#> [BNP, 1970]                . 2. [  Deport ] all illegal immigrants  
-#> [BNP, 1976] immigrants We shall [  deport ] all illegal immigrants  
-#> [BNP, 2621]  Criminals We shall [  deport ] all criminal entrants
+```
 
+    ##                        contextPre keyword                contextPost
+    ##  [BNP, 159]        The BNP will [  deport ] all foreigners convicted
+    ## [BNP, 1970]                . 2. [  Deport ] all illegal immigrants  
+    ## [BNP, 1976] immigrants We shall [  deport ] all illegal immigrants  
+    ## [BNP, 2621]  Criminals We shall [  deport ] all criminal entrants
+
+``` r
 # create a dfm, removing stopwords
 mydfm <- dfm(uk2010immigCorpus, ignoredFeatures=c("will", stopwords("english")))
-#> Creating a dfm from a corpus ...
-#>    ... lowercasing
-#>    ... tokenizing
-#>    ... indexing documents: 9 documents
-#>    ... indexing features: 1,586 feature types
-#>    ... removed 97 features, from 175 supplied (glob) feature types
-#>    ... created a 9 x 1489 sparse dfm
-#>    ... complete. 
-#> Elapsed time: 0.037 seconds.
+```
+
+    ## Creating a dfm from a corpus ...
+    ##    ... lowercasing
+    ##    ... tokenizing
+    ##    ... indexing documents: 9 documents
+    ##    ... indexing features: 1,586 feature types
+    ##    ... removed 97 features, from 175 supplied (glob) feature types
+    ##    ... created a 9 x 1489 sparse dfm
+    ##    ... complete. 
+    ## Elapsed time: 0.037 seconds.
+
+``` r
 dim(mydfm)              # basic dimensions of the dfm
-#> [1]    9 1489
+```
+
+    ## [1]    9 1489
+
+``` r
 topfeatures(mydfm, 20)  # 20 top words
-#> immigration     british      people      asylum     britain          uk 
-#>          66          37          35          29          28          27 
-#>      system  population     country         new  immigrants      ensure 
-#>          27          21          20          19          17          17 
-#>       shall citizenship      social    national         bnp     illegal 
-#>          17          16          14          14          13          13 
-#>        work     percent 
-#>          13          12
+```
+
+    ## immigration     british      people      asylum     britain          uk 
+    ##          66          37          35          29          28          27 
+    ##      system  population     country         new  immigrants      ensure 
+    ##          27          21          20          19          17          17 
+    ##       shall citizenship      social    national         bnp     illegal 
+    ##          17          16          14          14          13          13 
+    ##        work     percent 
+    ##          13          12
+
+``` r
 plot(mydfm, min.freq = 6, random.order = FALSE)             # word cloud     
 ```
 
