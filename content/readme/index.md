@@ -131,7 +131,7 @@ summary(uk2010immigCorpus, showmeta=TRUE)
     ##          UKIP   346    739        27         UKIP
     ## 
     ## Source:  /Users/kbenoit/Dropbox/GitHub/testing/content/readme/* on x86_64 by kbenoit
-    ## Created: Mon Apr  4 15:02:03 2016
+    ## Created: Mon Apr  4 18:41:27 2016
     ## Notes:   Immigration-related sections of 2010 UK party manifestos
 
 ``` r
@@ -158,7 +158,7 @@ mydfm <- dfm(uk2010immigCorpus, ignoredFeatures=c("will", stopwords("english")))
     ##    ... removed 97 features, from 175 supplied (glob) feature types
     ##    ... created a 9 x 1489 sparse dfm
     ##    ... complete. 
-    ## Elapsed time: 0.037 seconds.
+    ## Elapsed time: 0.041 seconds.
 
 ``` r
 dim(mydfm)              # basic dimensions of the dfm
