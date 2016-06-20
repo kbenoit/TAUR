@@ -1,4 +1,4 @@
-baseurl = "https://kbenoit.github.io/TAUR/"
+baseurl = "https://kbenoit.github.io/TAUR"
 languageCode = "en-uk"
 title = "Text Analysis Using R"
 theme = "hugo-material-docs"
