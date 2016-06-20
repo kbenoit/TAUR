@@ -6,7 +6,7 @@ type: index
 
 ## Text Analysis Using R
 
-Testing the setup for the book.
+Testing the setup for the book.  New comment.
 
 ## Beautiful documentation
 
