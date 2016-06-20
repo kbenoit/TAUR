@@ -370,6 +370,10 @@ accounts to the drawer by setting the variables &lt;code&gt;github&lt;/code&gt; 
       <guid>https://kbenoit.github.io/TAUR/</guid>
       <description>
 
+&lt;h2 id=&#34;text-analysis-using-r&#34;&gt;Text Analysis Using R&lt;/h2&gt;
+
+&lt;p&gt;Testing the setup for the book.&lt;/p&gt;
+
 &lt;h2 id=&#34;beautiful-documentation&#34;&gt;Beautiful documentation&lt;/h2&gt;
 
 &lt;p&gt;Material is a theme for &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, a fast and flexible static site generator. It is built using Google&amp;rsquo;s &lt;a href=&#34;https://www.google.com/design/spec/material-design/introduction.html&#34;&gt;material design&lt;/a&gt;
