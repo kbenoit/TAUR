@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Text Analysis Using R</title>
+    <link>https://kbenoit.github.io/TAUR/</link>
+    <description>Recent content on Text Analysis Using R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Wed, 09 Mar 2016 20:10:46 +0100</lastBuildDate>
+    <atom:link href="https://kbenoit.github.io/TAUR/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>License</title>
+      <link>https://kbenoit.github.io/TAUR/license/</link>
+      <pubDate>Wed, 09 Mar 2016 20:10:46 +0100</pubDate>
+      
+      <guid>https://kbenoit.github.io/TAUR/license/</guid>
+      <description>&lt;p&gt;Copyright &amp;copy; 2016 Digitalcraftsman &lt;a href=&#34;mailto:digitalcraftsman@protonmail.com&#34;&gt;digitalcraftsman@protonmail.com&lt;/a&gt;&lt;br&gt;
+Copyright &amp;copy; 2016 Martin Donath &lt;a href=&#34;mailto:martin.donath@squidfunk.com&#34;&gt;martin.donath@squidfunk.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &amp;ldquo;Software&amp;rdquo;), to
+deal in the Software without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:&lt;/p&gt;
+
+&lt;p&gt;The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.&lt;/p&gt;
+
+&lt;p&gt;THE SOFTWARE IS PROVIDED &amp;ldquo;AS IS&amp;rdquo;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+IN THE SOFTWARE.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Roadmap</title>
+      <link>https://kbenoit.github.io/TAUR/roadmap/</link>
+      <pubDate>Wed, 09 Mar 2016 20:08:11 +0100</pubDate>
+      
+      <guid>https://kbenoit.github.io/TAUR/roadmap/</guid>
+      <description>
+
+&lt;p&gt;Quo vadis? The port of the original &lt;a href=&#34;https://github.com/squidfunk/mkdocs-material&#34;&gt;Material theme&lt;/a&gt; has replicated nearly all of its features. A few are still missing but I&amp;rsquo;ve good news: the Hugo community is actively working on this issues. Maybe with the next release of Hugo we can abandon this list. Stay tuned.&lt;/p&gt;
+
+&lt;h2 id=&#34;localization&#34;&gt;Localization&lt;/h2&gt;
+
+&lt;p&gt;Currently, it is possible to collect all strings in a single place for easy customization. However, this only enables you to define all strings in a single language. This approach is quite limiting in terms of localization support. Therefore, I decided to wait for a native integration. This way we can avoid a second setup of all strings in your website.&lt;/p&gt;
+
+&lt;p&gt;Keep an eye on &lt;a href=&#34;https://github.com/spf13/hugo/issues/1734&#34;&gt;#1734&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;search&#34;&gt;Search&lt;/h2&gt;
+
+&lt;p&gt;Beside third-party services, some hacky workarounds and Grunt-/Gulp-based scripts that only require unnecessary dependencies, future versions of Hugo will support the generation of a content index as a core feature.&lt;/p&gt;
+
+&lt;p&gt;This approach plays well with this theme since MkDocs does the same.&lt;/p&gt;
+
+&lt;p&gt;Keep an eye on &lt;a href=&#34;https://github.com/spf13/hugo/pull/1853&#34;&gt;#1853&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;contributing&#34;&gt;Contributing&lt;/h2&gt;
+
+&lt;p&gt;Did you found an bug or you would like to suggest a new feature? I&amp;rsquo;m open for feedback. Please open a new &lt;a href=&#34;https://github.com/digitalcraftsman/hugo-material-docs/issues&#34;&gt;issue&lt;/a&gt; and let me know.&lt;/p&gt;
+
+&lt;p&gt;You&amp;rsquo;re also welcome to contribute with &lt;a href=&#34;https://github.com/digitalcraftsman/hugo-material-docs/pulls&#34;&gt;pull requests&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Adding content</title>
+      <link>https://kbenoit.github.io/TAUR/adding-content/</link>
+      <pubDate>Wed, 09 Mar 2016 19:56:50 +0100</pubDate>
+      
+      <guid>https://kbenoit.github.io/TAUR/adding-content/</guid>
+      <description>
+
+&lt;h2 id=&#34;hello-world&#34;&gt;Hello world&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s create our first content file for your documentation. Open a terminal and add the following command for each new file you want to add. Replace &lt;code&gt;&amp;lt;section-name&amp;gt;&lt;/code&gt; with a general term that describes your document in detail.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;hugo new &amp;lt;section-name&amp;gt;/filename.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Visitors of your website will find the final document under &lt;code&gt;www.example.com/&amp;lt;section-name&amp;gt;/filename/&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Since it&amp;rsquo;s possible to have multiple content files in the same section I recommend to create at least one &lt;code&gt;index.md&lt;/code&gt; file per section. This ensures that users will find an index page under &lt;code&gt;www.example.com/&amp;lt;section-name&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;homepage&#34;&gt;Homepage&lt;/h2&gt;
+
+&lt;p&gt;To add content to the homepage you need to add a small indicator to the frontmatter of the content file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;type: index
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Otherwise the theme will not be able to find the corresponding content file.&lt;/p&gt;
+
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h2&gt;
+
+&lt;p&gt;You maybe noticed that the menu on the left contains a small table of contents of the current page. All &lt;code&gt;&amp;lt;h2&amp;gt;&lt;/code&gt; tags (&lt;code&gt;## Headline&lt;/code&gt; in Markdown) will be added automatically.&lt;/p&gt;
+
+&lt;h2 id=&#34;admonitions&#34;&gt;Admonitions&lt;/h2&gt;
+
+&lt;p&gt;Admonition is a handy feature that adds block-styled side content to your documentation, for example hints, notes or warnings. It can be enabled by using the corresponding &lt;a href=&#34;http://gohugo.io/extras/shortcodes/&#34;&gt;shortcodes&lt;/a&gt; inside your content:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;{{&amp;lt; note title=&amp;quot;Note&amp;quot; &amp;gt;}}
+Nothing to see here, move along.
+{{&amp;lt; /note &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will print the following block:&lt;/p&gt;
+
+&lt;div class=&#34;admonition note&#34;&gt;
+&lt;p class=&#34;admonition-title&#34;&gt;Note&lt;/p&gt;
+&lt;p&gt;Nothing to see here, move along.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The shortcode adds a neutral color for the note class and a red color for the warning class. You can also add a custom title:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;{{&amp;lt; warning title=&amp;quot;Don&#39;t try this at home&amp;quot; &amp;gt;}}
+Nothing to see here, move along.
+{{&amp;lt; /warning &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will print the following block:&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;admonition warning&#34;&gt;
+&lt;p class=&#34;admonition-title&#34;&gt;Don&amp;#39;t try this at home&lt;/p&gt;
+&lt;p&gt;Nothing to see here, move along.&lt;/p&gt;
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting started</title>
+      <link>https://kbenoit.github.io/TAUR/getting-started/</link>
+      <pubDate>Wed, 09 Mar 2016 00:11:02 +0100</pubDate>
+      
+      <guid>https://kbenoit.github.io/TAUR/getting-started/</guid>
+      <description>
+
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+
+&lt;h3 id=&#34;installing-hugo&#34;&gt;Installing Hugo&lt;/h3&gt;
+
+&lt;p&gt;Hugo itself is just a single binary without dependencies on expensive runtimes like Ruby, Python or PHP and without dependencies on any databases. You just need to download the &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;latest version&lt;/a&gt;. For more information read the official &lt;a href=&#34;http://gohugo.io/overview/installing/&#34;&gt;installation guides&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s make sure Hugo is set up as expected. You should see a similar version number in your terminal:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;hugo version
+# Hugo Static Site Generator v0.15 BuildDate: 2016-01-03T12:47:47+01:00
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;installing-material&#34;&gt;Installing Material&lt;/h3&gt;
+
+&lt;p&gt;Next, assuming you have Hugo up and running the &lt;code&gt;hugo-material-docs&lt;/code&gt; theme can be installed with &lt;code&gt;git&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;# create a new Hugo website
+hugo new site my-awesome-docs
+
+# move into the themes folder of your website
+cd my-awesome-docs/themes/
+
+# download the theme
+git clone git@github.com:digitalcraftsman/hugo-material-docs.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
+
+&lt;p&gt;Next, take a look in the &lt;code&gt;exampleSite&lt;/code&gt; folder at &lt;code&gt;themes/hugo-material-docs/&lt;/code&gt;. This directory contains an example config file and the content that you are currently reading. It serves as an example setup for your documentation.&lt;/p&gt;
+
+&lt;p&gt;Copy at least the &lt;code&gt;config.toml&lt;/code&gt; in the root directory of your website. Overwrite the existing config file if necessary.&lt;/p&gt;
+
+&lt;p&gt;Hugo includes a development server, so you can view your changes as you go -
+very handy. Spin it up with the following command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;hugo server
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now you can go to &lt;a href=&#34;http://localhost:1313&#34;&gt;localhost:1313&lt;/a&gt; and the Material
+theme should be visible. You can now start writing your documentation, or read
+on and customize the theme through some options.&lt;/p&gt;
+
+&lt;h2 id=&#34;configuration&#34;&gt;Configuration&lt;/h2&gt;
+
+&lt;p&gt;Before you are able to deploy your documentation you should take a few minute to adjust some information in the &lt;code&gt;config.toml&lt;/code&gt;. Open the file in an editor:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;baseurl = &amp;quot;http://replace-this-with-your-hugo-site.com/&amp;quot;
+languageCode = &amp;quot;en-us&amp;quot;
+title = &amp;quot;Material Docs&amp;quot;
+
+[params]
+  # General information
+  author = &amp;quot;Digitalcraftsman&amp;quot;
+  description = &amp;quot;A material design theme for documentations.&amp;quot;
+  copyright = &amp;quot;Released under the MIT license&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;options&#34;&gt;Options&lt;/h2&gt;
+
+&lt;h3 id=&#34;github-integration&#34;&gt;Github integration&lt;/h3&gt;
+
+&lt;p&gt;If your project is hosted on GitHub, add the repository link to the
+configuration. If the &lt;code&gt;provider&lt;/code&gt; equals &lt;strong&gt;GitHub&lt;/strong&gt;, the Material theme will
+add a download and star button, and display the number of stars:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[params]
+  # Repository
+  provider = &amp;quot;GitHub&amp;quot;
+  repo_url = &amp;quot;https://github.com/digitalcraftsman/hugo-material-docs&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;adding-a-version&#34;&gt;Adding a version&lt;/h3&gt;
+
+&lt;p&gt;In order to add the current version next to the project banner inside the
+drawer, you can set the variable &lt;code&gt;version&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[params]
+  version = &amp;quot;1.0.0&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will also change the link behind the download button to point to the
+archive with the respective version on GitHub, assuming a release tagged with
+this exact version identifier.&lt;/p&gt;
+
+&lt;h3 id=&#34;adding-a-logo&#34;&gt;Adding a logo&lt;/h3&gt;
+
+&lt;p&gt;If your project has a logo, you can add it to the drawer/navigation by defining
+the variable &lt;code&gt;logo&lt;/code&gt;. Ideally, the image of your logo should have
+rectangular shape with a minimum resolution of 128x128 and leave some room
+towards the edges. The logo will also be used as a web application icon on iOS.
+Save your logo somewhere in the &lt;code&gt;static/&lt;/code&gt; folder and reference the file relative to this location:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[params]
+  logo = &amp;quot;images/logo.png&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;adding-a-custom-favicon&#34;&gt;Adding a custom favicon&lt;/h3&gt;
+
+&lt;p&gt;Favicons are small small icons that are displayed in the tabs right next to the title of the current page. As with the logo above you need to save your favicon in &lt;code&gt;static/&lt;/code&gt; and link it relative to this folder in the config file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[params]
+  favicon = &amp;quot;favicon.ico&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;google-analytics&#34;&gt;Google Analytics&lt;/h3&gt;
+
+&lt;p&gt;You can enable Google Analytics by replacing &lt;code&gt;UA-XXXXXXXX-X&lt;/code&gt; with your own tracking code.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;googleAnalytics = &amp;quot;UA-XXXXXXXX-X&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;small-tweaks&#34;&gt;Small tweaks&lt;/h3&gt;
+
+&lt;p&gt;This theme provides a simple way for making small adjustments, that is changing
+some margins, centering text, etc. Simply put the CSS and Javascript files that
+contain your adjustments in the &lt;code&gt;static/&lt;/code&gt; directory (ideally in subdirectories of their own) and include them via the &lt;code&gt;custom_css&lt;/code&gt; and &lt;code&gt;custom_js&lt;/code&gt;
+variables in your &lt;code&gt;config.toml&lt;/code&gt;. Reference the files relative to &lt;code&gt;static/&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[params]
+  # Custom assets
+  custom_css = [
+    &amp;quot;foo.css&amp;quot;,
+    &amp;quot;bar.css&amp;quot;
+  ]
+
+  custom_js  = [&amp;quot;buzz.js&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;changing-the-color-palette&#34;&gt;Changing the color palette&lt;/h3&gt;
+
+&lt;p&gt;Material defines a default hue for every primary and accent color on Google&amp;rsquo;s
+material design [color palette][]. This makes it very easy to change the overall look of the theme. Just set the variables &lt;code&gt;palette.primary&lt;/code&gt; and &lt;code&gt;palette.accent&lt;/code&gt; to one of the colors defined in the palette:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[params.palette]
+  primary = &amp;quot;red&amp;quot;
+  accent  = &amp;quot;light green&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Color names can be written upper- or lowercase but must match the names of the
+material design &lt;a href=&#34;http://www.materialui.co/colors&#34;&gt;color palette&lt;/a&gt;. Valid values are: &lt;em&gt;red&lt;/em&gt;, &lt;em&gt;pink&lt;/em&gt;, &lt;em&gt;purple&lt;/em&gt;, &lt;em&gt;deep purple&lt;/em&gt;, &lt;em&gt;indigo&lt;/em&gt;, &lt;em&gt;blue&lt;/em&gt;, &lt;em&gt;light blue&lt;/em&gt;, &lt;em&gt;cyan&lt;/em&gt;, &lt;em&gt;teal&lt;/em&gt;, &lt;em&gt;green&lt;/em&gt;, &lt;em&gt;light
+green&lt;/em&gt;, &lt;em&gt;lime&lt;/em&gt;, &lt;em&gt;yellow&lt;/em&gt;, &lt;em&gt;amber&lt;/em&gt;, &lt;em&gt;orange&lt;/em&gt;, &lt;em&gt;deep orange&lt;/em&gt;, &lt;em&gt;brown&lt;/em&gt;, &lt;em&gt;grey&lt;/em&gt; and
+&lt;em&gt;blue grey&lt;/em&gt;. The last three colors can only be used as a primary color.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://kbenoit.github.io/TAUR/images/colors.png&#34; alt=&#34;Color palette&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If the color is set via this configuration, an additional CSS file called
+&lt;code&gt;palettes.css&lt;/code&gt; is included that defines the color palettes.&lt;/p&gt;
+
+&lt;h3 id=&#34;changing-the-font-family&#34;&gt;Changing the font family&lt;/h3&gt;
+
+&lt;p&gt;Material uses the &lt;a href=&#34;http://font.ubuntu.com&#34;&gt;Ubuntu font family&lt;/a&gt; by default, specifically the regular sans-serif type for text and the monospaced type for code. Both fonts are loaded from &lt;a href=&#34;https://www.google.com/fonts&#34;&gt;Google Fonts&lt;/a&gt; and can be easily changed to other fonts, like for example Google&amp;rsquo;s own &lt;a href=&#34;https://www.google.com/fonts/specimen/Roboto&#34;&gt;Roboto font&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[params.font]
+  text = &amp;quot;Roboto&amp;quot;
+  code = &amp;quot;Roboto Mono&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The text font will be loaded in font-weights 400 and &lt;strong&gt;700&lt;/strong&gt;, the monospaced
+font in regular weight.&lt;/p&gt;
+
+&lt;h3 id=&#34;syntax-highlighting&#34;&gt;Syntax highlighting&lt;/h3&gt;
+
+&lt;p&gt;This theme uses the popular &lt;a href=&#34;https://highlightjs.org/&#34;&gt;Highlight.js&lt;/a&gt; library to colorize code examples. The default theme is called &lt;code&gt;Github&lt;/code&gt; with a few small tweaks. You can link our own theme if you like. Again, store your stylesheet in the &lt;code&gt;static/&lt;/code&gt; folder and set the relative path in the config file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[params]
+  # Syntax highlighting theme
+  highlight_css  = &amp;quot;path/to/theme.css&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;adding-a-github-and-twitter-account&#34;&gt;Adding a GitHub and Twitter account&lt;/h3&gt;
+
+&lt;p&gt;If you have a GitHub and/or Twitter account, you can add links to your
+accounts to the drawer by setting the variables &lt;code&gt;github&lt;/code&gt; and
+&lt;code&gt;twitter&lt;/code&gt; respectively:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[social]
+  twitter = &amp;quot;&amp;quot;
+  github  = &amp;quot;digitalcraftsman&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;adding-menu-entries&#34;&gt;Adding menu entries&lt;/h3&gt;
+
+&lt;p&gt;Once you created your first content files you can link them manually in the sidebar on the left. A menu entry has the following schema:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[[menu.main]]
+  name   = &amp;quot;Material&amp;quot;
+  url    = &amp;quot;/&amp;quot;
+  weight = 0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;name&lt;/code&gt; is the title displayed in the menu and &lt;code&gt;url&lt;/code&gt; the relative URL to the content. The &lt;code&gt;weight&lt;/code&gt; attribute allows you to modify the order of the menu entries. A menu entry appears further down the more weight you add.&lt;/p&gt;
+
+&lt;p&gt;Instead of just linking a single file you can enhance the sidebar by creating a nested menu. This way you can list all pages of a section instead of linking them one by one (without nesting).&lt;/p&gt;
+
+&lt;p&gt;You need extend the frontmatter of each file content file in a section slightly. The snippet below registers this content file as &amp;lsquo;child&amp;rsquo; of a menu entry that already exists.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;menu:
+  main:
+    parent: Material
+    identifier: &amp;lt;link name&amp;gt;
+    weight: 0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;main&lt;/code&gt; specifies to which menu the content file should be added. &lt;code&gt;main&lt;/code&gt; is the only menu in this theme by default. &lt;code&gt;parent&lt;/code&gt; let&amp;rsquo;s you register this content file to an existing menu entry, in this case the &lt;code&gt;Material&lt;/code&gt; link. Note that the parent in the frontmatter needs to match the name in &lt;code&gt;config.toml&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;identifier&lt;/code&gt; is the link that is shown in the menu. Ideally you choose the same name for the &lt;code&gt;identifier&lt;/code&gt; and the &lt;code&gt;title&lt;/code&gt; of the page. Again, &lt;code&gt;weight&lt;/code&gt; allows you to change the order of the nested links in a section.&lt;/p&gt;
+
+&lt;h3 id=&#34;markdown-extensions&#34;&gt;Markdown extensions&lt;/h3&gt;
+
+&lt;p&gt;Hugo uses &lt;a href=&#34;https://github.com/russross/blackfriday&#34;&gt;Blackfriday&lt;/a&gt; to process your content. For a detailed description of all options take a look at the &lt;a href=&#34;http://gohugo.io/overview/configuration/#configure-blackfriday-rendering&#34;&gt;Blackfriday configuration&lt;/a&gt; section in the Hugo documentation.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[blackfriday]
+  smartypants = true
+  fractions = true
+  smartDashes = true
+  plainIDAnchors = true
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Material for Hugo</title>
+      <link>https://kbenoit.github.io/TAUR/</link>
+      <pubDate>Tue, 08 Mar 2016 21:07:13 +0100</pubDate>
+      
+      <guid>https://kbenoit.github.io/TAUR/</guid>
+      <description>
+
+&lt;h2 id=&#34;beautiful-documentation&#34;&gt;Beautiful documentation&lt;/h2&gt;
+
+&lt;p&gt;Material is a theme for &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, a fast and flexible static site generator. It is built using Google&amp;rsquo;s &lt;a href=&#34;https://www.google.com/design/spec/material-design/introduction.html&#34;&gt;material design&lt;/a&gt;
+guidelines, fully responsive, optimized for touch and pointer devices as well
+as all sorts of screen sizes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://kbenoit.github.io/TAUR/images/screen.png&#34; alt=&#34;Material Screenshot&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Material is very lightweight – it is built from scratch using Javascript and
+CSS that weighs less than 30kb (minified, gzipped and excluding Google Fonts
+and Analytics). Yet, it is highly customizable and degrades gracefully in older
+browsers.&lt;/p&gt;
+
+&lt;h2 id=&#34;quick-start&#34;&gt;Quick start&lt;/h2&gt;
+
+&lt;p&gt;Install with &lt;code&gt;git&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;git clone git@github.com:digitalcraftsman/hugo-material-docs.git themes/hugo-material-docs
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Beautiful, readable and very user-friendly design based on Google&amp;rsquo;s material
+design guidelines, packed in a full responsive template with a well-defined
+and &lt;a href=&#34;https://kbenoit.github.io/TAUR/getting-started/#changing-the-color-palette&#34;&gt;easily customizable color palette&lt;/a&gt;, great typography, as well as a
+beautiful search interface and footer.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Well-tested and optimized Javascript and CSS including a cross-browser
+fixed/sticky header, a drawer that even works without Javascript using
+the &lt;a href=&#34;http://tutorialzine.com/2015/08/quick-tip-css-only-dropdowns-with-the-checkbox-hack/&#34;&gt;checkbox hack&lt;/a&gt; with fallbacks, responsive tables that scroll when
+the screen is too small and well-defined print styles.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Extra configuration options like a &lt;a href=&#34;https://kbenoit.github.io/TAUR/getting-started/#adding-a-logo&#34;&gt;project logo&lt;/a&gt;, links to the authors
+&lt;a href=&#34;https://kbenoit.github.io/TAUR/getting-started/#adding-a-github-and-twitter-account&#34;&gt;GitHub and Twitter accounts&lt;/a&gt; and display of the amount of stars the
+project has on GitHub.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Web application capability on iOS – when the page is saved to the homescreen,
+it behaves and looks like a native application.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;See the &lt;a href=&#34;https://kbenoit.github.io/TAUR/getting-started/&#34;&gt;getting started guide&lt;/a&gt; for instructions how to get
+it up and running.&lt;/p&gt;
+
+&lt;h2 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h2&gt;
+
+&lt;p&gt;Last but not least a big thank you to &lt;a href=&#34;https://github.com/squidfunk&#34;&gt;Martin Donath&lt;/a&gt;. He created the original &lt;a href=&#34;https://github.com/squidfunk/mkdocs-material&#34;&gt;Material theme&lt;/a&gt; for Hugo&amp;rsquo;s companion &lt;a href=&#34;http://www.mkdocs.org/&#34;&gt;MkDocs&lt;/a&gt;. This port wouldn&amp;rsquo;t be possible without him.&lt;/p&gt;
+
+&lt;p&gt;Furthermore, thanks to &lt;a href=&#34;https://gihub.com/spf13&#34;&gt;Steve Francia&lt;/a&gt; for creating Hugo and the &lt;a href=&#34;https://github.com/spf13/hugo/graphs/contributors&#34;&gt;awesome community&lt;/a&gt; around the project.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kbenoit.github.io/TAUR/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kbenoit.github.io/TAUR/readme/</guid>
+      <description>
+
+&lt;p&gt;See the &lt;a href=&#34;http://htmlpreview.github.com/?https://github.com/kbenoit/quanteda/blob/master/vignettes/quickstart.html&#34;&gt;Getting Started Vignette&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;quanteda-quantitative-analysis-of-textual-data&#34;&gt;quanteda: Quantitative Analysis of Textual Data&lt;/h1&gt;
+
+&lt;p&gt;An R package for managing and analyzing text, by Ken Benoit and Paul Nulty.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;quanteda&lt;/strong&gt; makes it easy to manage texts in the form of a corpus, defined as a collection of texts that includes document-level variables specific to each text, as well as meta-data for documents and for the collection as a whole. &lt;strong&gt;quanteda&lt;/strong&gt; includes tools to make it easy and fast to manuipulate the texts in a corpus, by performing the most common natural language processing tasks simply and quickly, such as tokenizing, stemming, or forming ngrams. &lt;strong&gt;quanteda&lt;/strong&gt;&amp;rsquo;s functions for tokenizing texts and forming multiple tokenized documents into a &lt;em&gt;document-feature matrix&lt;/em&gt; are both extremely fast and extremely simple to use. &lt;strong&gt;quanteda&lt;/strong&gt; can segment texts easily by words, paragraphs, sentences, or even user-supplied delimiters and tags.&lt;/p&gt;
+
+&lt;p&gt;Built on the text processing functions in the &lt;strong&gt;stringi&lt;/strong&gt; package, which is in turn built on C++ implementation of the &lt;a href=&#34;http://www.icu-project.org/&#34;&gt;ICU&lt;/a&gt; libraries for Unicode text handling, &lt;strong&gt;quanteda&lt;/strong&gt; pays special attention to fast and correct implementation of Unicode and the handling of text in any character set, following conversion internally to UTF-8.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;quanteda&lt;/strong&gt; is built for efficiency and speed, through its design around three infrastructures: the &lt;strong&gt;stringi&lt;/strong&gt; package for text processing, the &lt;strong&gt;data.table&lt;/strong&gt; package for indexing large documents efficiently, and the &lt;strong&gt;Matrix&lt;/strong&gt; package for sparse matrix objects. If you can fit it into memory, &lt;strong&gt;quanteda&lt;/strong&gt; will handle it quickly. (And eventually, we will make it possible to process objects even larger than available memory.)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;quanteda&lt;/strong&gt; is principally designed to allow users a fast and convenient method to go from a corpus of texts to a selected matrix of documents by features, after defining what the documents and features. The package makes it easy to redefine documents, for instance by splitting them into sentences or paragraphs, or by tags, as well as to group them into larger documents by document variables, or to subset them based on logical conditions or combinations of document variables. The package also implements common NLP feature selection functions, such as removing stopwords and stemming in numerous languages, selecting words found in dictionaries, treating words as equivalent based on a user-defined &amp;ldquo;thesaurus&amp;rdquo;, and trimming and weighting features based on document frequency, feature frequency, and related measures such as &lt;em&gt;tf-idf&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Once constructed, a &lt;strong&gt;quanteda&lt;/strong&gt; &amp;ldquo;dfm&amp;rdquo;&amp;rdquo; can be easily analyzed using either quanteda&amp;rsquo;s built-in tools for scaling document positions, or used with a number of other text analytic tools, such as:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;topic models (including converters for direct use with the &lt;strong&gt;topicmodels&lt;/strong&gt;, &lt;strong&gt;LDA&lt;/strong&gt;, and &lt;strong&gt;stm&lt;/strong&gt; packages)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;document scaling (using &lt;strong&gt;quanteda&lt;/strong&gt;&amp;rsquo;s own functions for the &amp;ldquo;wordfish&amp;rdquo; and &amp;ldquo;Wordscores&amp;rdquo; models, direct use with the &lt;strong&gt;ca&lt;/strong&gt; package for correspondence analysis, or scaling with the &lt;strong&gt;austin&lt;/strong&gt; package)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;machine learning through a variety of other packages that take matrix or matrix-like inputs.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Additional features&lt;/strong&gt; of quanteda include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;the ability to explore texts using &lt;em&gt;key-words-in-context&lt;/em&gt;;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;fast computation of a variety of readability indexes;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;fast computation of a variety of lexical diversity measures;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;quick computation of word or document association measures, for clustering or to compute similarity scores for other purposes; and&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;a comprehensive suite of descriptive statistics on text such as the number of sentences, words, characters, or syllables per document.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Planned features&lt;/strong&gt; coming soon to &lt;strong&gt;quanteda&lt;/strong&gt; are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;bootstrapping methods for texts that makes it easy to resample texts from pre-defined units, to facilitate computation of confidence intervals on textual statistics using techniques of non-parametric bootstrapping, but applied to the original texts as data.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;expansion of the document-feature matrix structure through a standard interface called &lt;code&gt;textmodel()&lt;/code&gt;. (As of version 0.8.0, textmodel works in a basic fashion only for the &amp;ldquo;Wordscores&amp;rdquo; and &amp;ldquo;wordfish&amp;rdquo; scaling models.)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;how-to-install&#34;&gt;How to Install&lt;/h2&gt;
+
+&lt;p&gt;As of version 0.8.0, the GitHub master repository will always contain the development version of quanteda, while the CRAN version will contain the latest &amp;ldquo;stable&amp;rdquo; version. You therefore have two options for installing the package:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;From CRAN, using your R package installer, or simply&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;install.packages(&amp;quot;quanteda&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(For the development version) From GitHub, using&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;devtools::install_github(&amp;quot;kbenoit/quanteda&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Because this compiles some C++ source code, you will need a compiler installed. If you are using a Windows platform, this means you will need also to install the &lt;a href=&#34;http://cran.r-project.org/bin/windows/Rtools/&#34;&gt;Rtools&lt;/a&gt; software available from CRAN. If you are using OS X, you will probably need to install XCode, available for free from the App Store.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(Optional) You can install some additional corpus data from &lt;strong&gt;quantedaData&lt;/strong&gt; using&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;## devtools required to install quanteda from Github
+devtools::install_github(&amp;quot;kbenoit/quantedaData&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;documentation&#34;&gt;Documentation&lt;/h2&gt;
+
+&lt;p&gt;In-depth tutorials in the form of a gitbook will be available here &lt;a href=&#34;http://kbenoit.github.io/quanteda&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Examples for any function can also be seen using (for instance, for &lt;code&gt;corpus()&lt;/code&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;example(corpus)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There are also some demo functions that show off some of the package capabilities, such as &lt;code&gt;demo(quanteda)&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(quanteda)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## 
+## Attaching package: &#39;quanteda&#39;
+
+## The following object is masked from &#39;package:stats&#39;:
+## 
+##     df
+
+## The following object is masked from &#39;package:base&#39;:
+## 
+##     sample
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# create a corpus from the immigration texts from UK party platforms
+uk2010immigCorpus &amp;lt;- corpus(ukimmigTexts,
+                            docvars=data.frame(party=names(ukimmigTexts)),
+                            notes=&amp;quot;Immigration-related sections of 2010 UK party manifestos&amp;quot;,
+                            enc=&amp;quot;UTF-8&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## Warning in corpus.character(ukimmigTexts, docvars = data.frame(party =
+## names(ukimmigTexts)), : Argument enc not used.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;uk2010immigCorpus
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## Corpus consisting of 9 documents.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;summary(uk2010immigCorpus, showmeta=TRUE)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## Corpus consisting of 9 documents.
+## 
+##          Text Types Tokens Sentences        party
+##           BNP  1126   3330        88          BNP
+##     Coalition   144    268         4    Coalition
+##  Conservative   252    503        15 Conservative
+##        Greens   325    687        21       Greens
+##        Labour   296    703        29       Labour
+##        LibDem   257    499        14       LibDem
+##            PC    80    118         5           PC
+##           SNP    90    136         4          SNP
+##          UKIP   346    739        27         UKIP
+## 
+## Source:  /Users/kbenoit/Dropbox/GitHub/testing/content/readme/* on x86_64 by kbenoit
+## Created: Mon Apr  4 18:41:27 2016
+## Notes:   Immigration-related sections of 2010 UK party manifestos
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# key words in context for &amp;quot;deport&amp;quot;, 3 words of context
+kwic(uk2010immigCorpus, &amp;quot;deport&amp;quot;, 3)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;##                        contextPre keyword                contextPost
+##  [BNP, 159]        The BNP will [  deport ] all foreigners convicted
+## [BNP, 1970]                . 2. [  Deport ] all illegal immigrants  
+## [BNP, 1976] immigrants We shall [  deport ] all illegal immigrants  
+## [BNP, 2621]  Criminals We shall [  deport ] all criminal entrants
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# create a dfm, removing stopwords
+mydfm &amp;lt;- dfm(uk2010immigCorpus, ignoredFeatures=c(&amp;quot;will&amp;quot;, stopwords(&amp;quot;english&amp;quot;)))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## Creating a dfm from a corpus ...
+##    ... lowercasing
+##    ... tokenizing
+##    ... indexing documents: 9 documents
+##    ... indexing features: 1,586 feature types
+##    ... removed 97 features, from 175 supplied (glob) feature types
+##    ... created a 9 x 1489 sparse dfm
+##    ... complete. 
+## Elapsed time: 0.041 seconds.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;dim(mydfm)              # basic dimensions of the dfm
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1]    9 1489
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;topfeatures(mydfm, 20)  # 20 top words
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## immigration     british      people      asylum     britain          uk 
+##          66          37          35          29          28          27 
+##      system  population     country         new  immigrants      ensure 
+##          27          21          20          19          17          17 
+##       shall citizenship      social    national         bnp     illegal 
+##          17          16          14          14          13          13 
+##        work     percent 
+##          13          12
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;plot(mydfm, min.freq = 6, random.order = FALSE)             # word cloud     
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;README-quanteda_example-1.png&#34; alt=&#34;&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
