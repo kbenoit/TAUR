@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Roadmaps on Text Analysis Using R</title>
-    <link>http://localhost/roadmap/</link>
+    <link>https://kbenoit.github.io/TAUR/roadmap/</link>
     <description>Recent content in Roadmaps on Text Analysis Using R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
     <lastBuildDate>Wed, 09 Mar 2016 20:08:11 +0100</lastBuildDate>
-    <atom:link href="http://localhost/roadmap/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kbenoit.github.io/TAUR/roadmap/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Roadmap</title>
-      <link>http://localhost/roadmap/</link>
+      <link>https://kbenoit.github.io/TAUR/roadmap/</link>
       <pubDate>Wed, 09 Mar 2016 20:08:11 +0100</pubDate>
       
-      <guid>http://localhost/roadmap/</guid>
+      <guid>https://kbenoit.github.io/TAUR/roadmap/</guid>
       <description>
 
 &lt;p&gt;Quo vadis? The port of the original &lt;a href=&#34;https://github.com/squidfunk/mkdocs-material&#34;&gt;Material theme&lt;/a&gt; has replicated nearly all of its features. A few are still missing but I&amp;rsquo;ve good news: the Hugo community is actively working on this issues. Maybe with the next release of Hugo we can abandon this list. Stay tuned.&lt;/p&gt;

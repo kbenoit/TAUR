@@ -6,17 +6,10 @@ output:
 
 ```{r, echo = FALSE}
 knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "README-"
+  fig.path = "README-",
+  highlight = TRUE
 )
 ```
-
-**Development branch** [![Build Status](https://travis-ci.org/kbenoit/quanteda.svg?branch=dev)]
-[![codecov.io](https://codecov.io/github/kbenoit/quanteda/coverage.svg?branch=dev)](https://codecov.io/github/kbenoit/quanteda/coverage.svg?branch=dev)
-**Master branch** [![Build Status](https://travis-ci.org/kbenoit/quanteda.svg?branch=master)]
-[![codecov.io](https://codecov.io/github/kbenoit/quanteda/coverage.svg?branch=master)](https://codecov.io/github/kbenoit/quanteda/coverage.svg?branch=master)
-
 
 See the [Getting Started Vignette](http://htmlpreview.github.com/?https://github.com/kbenoit/quanteda/blob/master/vignettes/quickstart.html).
 
@@ -89,13 +82,13 @@ As of version 0.8.0, the GitHub master repository will always contain the develo
 
 1.  From CRAN, using your R package installer, or simply
 
-    ```
+    ```{r, eval = FALSE}
     install.packages("quanteda")
     ```
 
 2.  (For the development version) From GitHub, using
 
-    ```
+    ```{r, eval = FALSE}
     devtools::install_github("kbenoit/quanteda")
     ```
 
@@ -103,7 +96,7 @@ As of version 0.8.0, the GitHub master repository will always contain the develo
 
 3.  (Optional) You can install some additional corpus data from **quantedaData** using
 
-    ```S
+    ```{r, eval = FALSE}
     ## devtools required to install quanteda from Github
     devtools::install_github("kbenoit/quantedaData")
     ```
@@ -115,7 +108,7 @@ Documentation
 In-depth tutorials in the form of a gitbook will be available here [here](http://kbenoit.github.io/quanteda).
 
 Examples for any function can also be seen using (for instance, for `corpus()`):
-```S
+```{r, eval = FALSE}
 example(corpus)
 ```
 There are also some demo functions that show off some of the package capabilities, such 

@@ -2,38 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://localhost/</loc>
+    <loc>https://kbenoit.github.io/TAUR/</loc>
     <lastmod>2016-03-09T20:10:46+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost/license/</loc>
+    <loc>https://kbenoit.github.io/TAUR/license/</loc>
     <lastmod>2016-03-09T20:10:46+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost/roadmap/</loc>
+    <loc>https://kbenoit.github.io/TAUR/roadmap/</loc>
     <lastmod>2016-03-09T20:08:11+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost/adding-content/</loc>
+    <loc>https://kbenoit.github.io/TAUR/adding-content/</loc>
     <lastmod>2016-03-09T19:56:50+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost/getting-started/</loc>
+    <loc>https://kbenoit.github.io/TAUR/getting-started/</loc>
     <lastmod>2016-03-09T00:11:02+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost/</loc>
+    <loc>https://kbenoit.github.io/TAUR/</loc>
     <lastmod>2016-03-08T21:07:13+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost/readme/</loc>
+    <loc>https://kbenoit.github.io/TAUR/readme/</loc>
   </url>
   
 </urlset>

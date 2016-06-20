@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Text Analysis Using R</title>
-    <link>http://localhost/</link>
+    <link>https://kbenoit.github.io/TAUR/</link>
     <description>Recent content on Text Analysis Using R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
     <lastBuildDate>Wed, 09 Mar 2016 20:10:46 +0100</lastBuildDate>
-    <atom:link href="http://localhost/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kbenoit.github.io/TAUR/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>License</title>
-      <link>http://localhost/license/</link>
+      <link>https://kbenoit.github.io/TAUR/license/</link>
       <pubDate>Wed, 09 Mar 2016 20:10:46 +0100</pubDate>
       
-      <guid>http://localhost/license/</guid>
+      <guid>https://kbenoit.github.io/TAUR/license/</guid>
       <description>&lt;p&gt;Copyright &amp;copy; 2016 Digitalcraftsman &lt;a href=&#34;mailto:digitalcraftsman@protonmail.com&#34;&gt;digitalcraftsman@protonmail.com&lt;/a&gt;&lt;br&gt;
 Copyright &amp;copy; 2016 Martin Donath &lt;a href=&#34;mailto:martin.donath@squidfunk.com&#34;&gt;martin.donath@squidfunk.com&lt;/a&gt;&lt;/p&gt;
 
@@ -40,10 +40,10 @@ IN THE SOFTWARE.&lt;/p&gt;
     
     <item>
       <title>Roadmap</title>
-      <link>http://localhost/roadmap/</link>
+      <link>https://kbenoit.github.io/TAUR/roadmap/</link>
       <pubDate>Wed, 09 Mar 2016 20:08:11 +0100</pubDate>
       
-      <guid>http://localhost/roadmap/</guid>
+      <guid>https://kbenoit.github.io/TAUR/roadmap/</guid>
       <description>
 
 &lt;p&gt;Quo vadis? The port of the original &lt;a href=&#34;https://github.com/squidfunk/mkdocs-material&#34;&gt;Material theme&lt;/a&gt; has replicated nearly all of its features. A few are still missing but I&amp;rsquo;ve good news: the Hugo community is actively working on this issues. Maybe with the next release of Hugo we can abandon this list. Stay tuned.&lt;/p&gt;
@@ -72,10 +72,10 @@ IN THE SOFTWARE.&lt;/p&gt;
     
     <item>
       <title>Adding content</title>
-      <link>http://localhost/adding-content/</link>
+      <link>https://kbenoit.github.io/TAUR/adding-content/</link>
       <pubDate>Wed, 09 Mar 2016 19:56:50 +0100</pubDate>
       
-      <guid>http://localhost/adding-content/</guid>
+      <guid>https://kbenoit.github.io/TAUR/adding-content/</guid>
       <description>
 
 &lt;h2 id=&#34;hello-world&#34;&gt;Hello world&lt;/h2&gt;
@@ -112,34 +112,15 @@ Nothing to see here, move along.
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;This will print the following block:&lt;/p&gt;
-
-&lt;div class=&#34;admonition note&#34;&gt;
-&lt;p class=&#34;admonition-title&#34;&gt;Note&lt;/p&gt;
-&lt;p&gt;Nothing to see here, move along.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The shortcode adds a neutral color for the note class and a red color for the warning class. You can also add a custom title:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;{{&amp;lt; warning title=&amp;quot;Don&#39;t try this at home&amp;quot; &amp;gt;}}
-Nothing to see here, move along.
-{{&amp;lt; /warning &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This will print the following block:&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;admonition warning&#34;&gt;
-&lt;p class=&#34;admonition-title&#34;&gt;Don&amp;#39;t try this at home&lt;/p&gt;
-&lt;p&gt;Nothing to see here, move along.&lt;/p&gt;
-&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Getting started</title>
-      <link>http://localhost/getting-started/</link>
+      <link>https://kbenoit.github.io/TAUR/getting-started/</link>
       <pubDate>Wed, 09 Mar 2016 00:11:02 +0100</pubDate>
       
-      <guid>http://localhost/getting-started/</guid>
+      <guid>https://kbenoit.github.io/TAUR/getting-started/</guid>
       <description>
 
 &lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
@@ -285,7 +266,7 @@ material design &lt;a href=&#34;http://www.materialui.co/colors&#34;&gt;color pa
 green&lt;/em&gt;, &lt;em&gt;lime&lt;/em&gt;, &lt;em&gt;yellow&lt;/em&gt;, &lt;em&gt;amber&lt;/em&gt;, &lt;em&gt;orange&lt;/em&gt;, &lt;em&gt;deep orange&lt;/em&gt;, &lt;em&gt;brown&lt;/em&gt;, &lt;em&gt;grey&lt;/em&gt; and
 &lt;em&gt;blue grey&lt;/em&gt;. The last three colors can only be used as a primary color.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost/images/colors.png&#34; alt=&#34;Color palette&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://kbenoit.github.io/TAUR/images/colors.png&#34; alt=&#34;Color palette&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;If the color is set via this configuration, an additional CSS file called
 &lt;code&gt;palettes.css&lt;/code&gt; is included that defines the color palettes.&lt;/p&gt;
@@ -364,10 +345,10 @@ accounts to the drawer by setting the variables &lt;code&gt;github&lt;/code&gt; 
     
     <item>
       <title>Material for Hugo</title>
-      <link>http://localhost/</link>
+      <link>https://kbenoit.github.io/TAUR/</link>
       <pubDate>Tue, 08 Mar 2016 21:07:13 +0100</pubDate>
       
-      <guid>http://localhost/</guid>
+      <guid>https://kbenoit.github.io/TAUR/</guid>
       <description>
 
 &lt;h2 id=&#34;beautiful-documentation&#34;&gt;Beautiful documentation&lt;/h2&gt;
@@ -376,7 +357,7 @@ accounts to the drawer by setting the variables &lt;code&gt;github&lt;/code&gt; 
 guidelines, fully responsive, optimized for touch and pointer devices as well
 as all sorts of screen sizes.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost/images/screen.png&#34; alt=&#34;Material Screenshot&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://kbenoit.github.io/TAUR/images/screen.png&#34; alt=&#34;Material Screenshot&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Material is very lightweight – it is built from scratch using Javascript and
 CSS that weighs less than 30kb (minified, gzipped and excluding Google Fonts
@@ -395,7 +376,7 @@ browsers.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Beautiful, readable and very user-friendly design based on Google&amp;rsquo;s material
 design guidelines, packed in a full responsive template with a well-defined
-and &lt;a href=&#34;http://localhost/getting-started/#changing-the-color-palette&#34;&gt;easily customizable color palette&lt;/a&gt;, great typography, as well as a
+and &lt;a href=&#34;https://kbenoit.github.io/TAUR/getting-started/#changing-the-color-palette&#34;&gt;easily customizable color palette&lt;/a&gt;, great typography, as well as a
 beautiful search interface and footer.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Well-tested and optimized Javascript and CSS including a cross-browser
@@ -403,15 +384,15 @@ fixed/sticky header, a drawer that even works without Javascript using
 the &lt;a href=&#34;http://tutorialzine.com/2015/08/quick-tip-css-only-dropdowns-with-the-checkbox-hack/&#34;&gt;checkbox hack&lt;/a&gt; with fallbacks, responsive tables that scroll when
 the screen is too small and well-defined print styles.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Extra configuration options like a &lt;a href=&#34;http://localhost/getting-started/#adding-a-logo&#34;&gt;project logo&lt;/a&gt;, links to the authors
-&lt;a href=&#34;http://localhost/getting-started/#adding-a-github-and-twitter-account&#34;&gt;GitHub and Twitter accounts&lt;/a&gt; and display of the amount of stars the
+&lt;li&gt;&lt;p&gt;Extra configuration options like a &lt;a href=&#34;https://kbenoit.github.io/TAUR/getting-started/#adding-a-logo&#34;&gt;project logo&lt;/a&gt;, links to the authors
+&lt;a href=&#34;https://kbenoit.github.io/TAUR/getting-started/#adding-a-github-and-twitter-account&#34;&gt;GitHub and Twitter accounts&lt;/a&gt; and display of the amount of stars the
 project has on GitHub.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Web application capability on iOS – when the page is saved to the homescreen,
 it behaves and looks like a native application.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;See the &lt;a href=&#34;http://localhost/getting-started/&#34;&gt;getting started guide&lt;/a&gt; for instructions how to get
+&lt;p&gt;See the &lt;a href=&#34;https://kbenoit.github.io/TAUR/getting-started/&#34;&gt;getting started guide&lt;/a&gt; for instructions how to get
 it up and running.&lt;/p&gt;
 
 &lt;h2 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h2&gt;
@@ -424,10 +405,10 @@ it up and running.&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>http://localhost/readme/</link>
+      <link>https://kbenoit.github.io/TAUR/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/readme/</guid>
+      <guid>https://kbenoit.github.io/TAUR/readme/</guid>
       <description>
 
 &lt;p&gt;See the &lt;a href=&#34;http://htmlpreview.github.com/?https://github.com/kbenoit/quanteda/blob/master/vignettes/quickstart.html&#34;&gt;Getting Started Vignette&lt;/a&gt;.&lt;/p&gt;
@@ -483,19 +464,19 @@ it up and running.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;From CRAN, using your R package installer, or simply&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;install.packages(&amp;quot;quanteda&amp;quot;)
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;install.packages(&amp;quot;quanteda&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;(For the development version) From GitHub, using&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;devtools::install_github(&amp;quot;kbenoit/quanteda&amp;quot;)
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;devtools::install_github(&amp;quot;kbenoit/quanteda&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Because this compiles some C++ source code, you will need a compiler installed. If you are using a Windows platform, this means you will need also to install the &lt;a href=&#34;http://cran.r-project.org/bin/windows/Rtools/&#34;&gt;Rtools&lt;/a&gt; software available from CRAN. If you are using OS X, you will probably need to install XCode, available for free from the App Store.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;(Optional) You can install some additional corpus data from &lt;strong&gt;quantedaData&lt;/strong&gt; using&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-s&#34;&gt;## devtools required to install quanteda from Github
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;## devtools required to install quanteda from Github
 devtools::install_github(&amp;quot;kbenoit/quantedaData&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -506,7 +487,7 @@ devtools::install_github(&amp;quot;kbenoit/quantedaData&amp;quot;)
 
 &lt;p&gt;Examples for any function can also be seen using (for instance, for &lt;code&gt;corpus()&lt;/code&gt;):&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-s&#34;&gt;example(corpus)
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;example(corpus)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;There are also some demo functions that show off some of the package capabilities, such as &lt;code&gt;demo(quanteda)&lt;/code&gt;.&lt;/p&gt;
@@ -514,72 +495,104 @@ devtools::install_github(&amp;quot;kbenoit/quantedaData&amp;quot;)
 &lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(quanteda)
-#&amp;gt; 
-#&amp;gt; Attaching package: &#39;quanteda&#39;
-#&amp;gt; The following object is masked from &#39;package:stats&#39;:
-#&amp;gt; 
-#&amp;gt;     df
-#&amp;gt; The following object is masked from &#39;package:base&#39;:
-#&amp;gt; 
-#&amp;gt;     sample
-# create a corpus from the immigration texts from UK party platforms
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## 
+## Attaching package: &#39;quanteda&#39;
+
+## The following object is masked from &#39;package:stats&#39;:
+## 
+##     df
+
+## The following object is masked from &#39;package:base&#39;:
+## 
+##     sample
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# create a corpus from the immigration texts from UK party platforms
 uk2010immigCorpus &amp;lt;- corpus(ukimmigTexts,
                             docvars=data.frame(party=names(ukimmigTexts)),
                             notes=&amp;quot;Immigration-related sections of 2010 UK party manifestos&amp;quot;,
                             enc=&amp;quot;UTF-8&amp;quot;)
-#&amp;gt; Warning in corpus.character(ukimmigTexts, docvars = data.frame(party =
-#&amp;gt; names(ukimmigTexts)), : Argument enc not used.
-uk2010immigCorpus
-#&amp;gt; Corpus consisting of 9 documents.
-summary(uk2010immigCorpus, showmeta=TRUE)
-#&amp;gt; Corpus consisting of 9 documents.
-#&amp;gt; 
-#&amp;gt;          Text Types Tokens Sentences        party
-#&amp;gt;           BNP  1126   3330        88          BNP
-#&amp;gt;     Coalition   144    268         4    Coalition
-#&amp;gt;  Conservative   252    503        15 Conservative
-#&amp;gt;        Greens   325    687        21       Greens
-#&amp;gt;        Labour   296    703        29       Labour
-#&amp;gt;        LibDem   257    499        14       LibDem
-#&amp;gt;            PC    80    118         5           PC
-#&amp;gt;           SNP    90    136         4          SNP
-#&amp;gt;          UKIP   346    739        27         UKIP
-#&amp;gt; 
-#&amp;gt; Source:  /Users/kbenoit/Dropbox/Sites/TAUR/content/readme/* on x86_64 by kbenoit
-#&amp;gt; Created: Mon Apr  4 11:33:14 2016
-#&amp;gt; Notes:   Immigration-related sections of 2010 UK party manifestos
+&lt;/code&gt;&lt;/pre&gt;
 
-# key words in context for &amp;quot;deport&amp;quot;, 3 words of context
+&lt;pre&gt;&lt;code&gt;## Warning in corpus.character(ukimmigTexts, docvars = data.frame(party =
+## names(ukimmigTexts)), : Argument enc not used.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;uk2010immigCorpus
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## Corpus consisting of 9 documents.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;summary(uk2010immigCorpus, showmeta=TRUE)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## Corpus consisting of 9 documents.
+## 
+##          Text Types Tokens Sentences        party
+##           BNP  1126   3330        88          BNP
+##     Coalition   144    268         4    Coalition
+##  Conservative   252    503        15 Conservative
+##        Greens   325    687        21       Greens
+##        Labour   296    703        29       Labour
+##        LibDem   257    499        14       LibDem
+##            PC    80    118         5           PC
+##           SNP    90    136         4          SNP
+##          UKIP   346    739        27         UKIP
+## 
+## Source:  /Users/kbenoit/Dropbox/GitHub/testing/content/readme/* on x86_64 by kbenoit
+## Created: Mon Apr  4 18:41:27 2016
+## Notes:   Immigration-related sections of 2010 UK party manifestos
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# key words in context for &amp;quot;deport&amp;quot;, 3 words of context
 kwic(uk2010immigCorpus, &amp;quot;deport&amp;quot;, 3)
-#&amp;gt;                        contextPre keyword                contextPost
-#&amp;gt;  [BNP, 159]        The BNP will [  deport ] all foreigners convicted
-#&amp;gt; [BNP, 1970]                . 2. [  Deport ] all illegal immigrants  
-#&amp;gt; [BNP, 1976] immigrants We shall [  deport ] all illegal immigrants  
-#&amp;gt; [BNP, 2621]  Criminals We shall [  deport ] all criminal entrants
+&lt;/code&gt;&lt;/pre&gt;
 
-# create a dfm, removing stopwords
+&lt;pre&gt;&lt;code&gt;##                        contextPre keyword                contextPost
+##  [BNP, 159]        The BNP will [  deport ] all foreigners convicted
+## [BNP, 1970]                . 2. [  Deport ] all illegal immigrants  
+## [BNP, 1976] immigrants We shall [  deport ] all illegal immigrants  
+## [BNP, 2621]  Criminals We shall [  deport ] all criminal entrants
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# create a dfm, removing stopwords
 mydfm &amp;lt;- dfm(uk2010immigCorpus, ignoredFeatures=c(&amp;quot;will&amp;quot;, stopwords(&amp;quot;english&amp;quot;)))
-#&amp;gt; Creating a dfm from a corpus ...
-#&amp;gt;    ... lowercasing
-#&amp;gt;    ... tokenizing
-#&amp;gt;    ... indexing documents: 9 documents
-#&amp;gt;    ... indexing features: 1,586 feature types
-#&amp;gt;    ... removed 97 features, from 175 supplied (glob) feature types
-#&amp;gt;    ... created a 9 x 1489 sparse dfm
-#&amp;gt;    ... complete. 
-#&amp;gt; Elapsed time: 0.037 seconds.
-dim(mydfm)              # basic dimensions of the dfm
-#&amp;gt; [1]    9 1489
-topfeatures(mydfm, 20)  # 20 top words
-#&amp;gt; immigration     british      people      asylum     britain          uk 
-#&amp;gt;          66          37          35          29          28          27 
-#&amp;gt;      system  population     country         new  immigrants      ensure 
-#&amp;gt;          27          21          20          19          17          17 
-#&amp;gt;       shall citizenship      social    national         bnp     illegal 
-#&amp;gt;          17          16          14          14          13          13 
-#&amp;gt;        work     percent 
-#&amp;gt;          13          12
-plot(mydfm, min.freq = 6, random.order = FALSE)             # word cloud     
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## Creating a dfm from a corpus ...
+##    ... lowercasing
+##    ... tokenizing
+##    ... indexing documents: 9 documents
+##    ... indexing features: 1,586 feature types
+##    ... removed 97 features, from 175 supplied (glob) feature types
+##    ... created a 9 x 1489 sparse dfm
+##    ... complete. 
+## Elapsed time: 0.041 seconds.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;dim(mydfm)              # basic dimensions of the dfm
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1]    9 1489
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;topfeatures(mydfm, 20)  # 20 top words
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## immigration     british      people      asylum     britain          uk 
+##          66          37          35          29          28          27 
+##      system  population     country         new  immigrants      ensure 
+##          27          21          20          19          17          17 
+##       shall citizenship      social    national         bnp     illegal 
+##          17          16          14          14          13          13 
+##        work     percent 
+##          13          12
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;plot(mydfm, min.freq = 6, random.order = FALSE)             # word cloud     
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;img src=&#34;README-quanteda_example-1.png&#34; alt=&#34;&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
