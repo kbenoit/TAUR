@@ -1,4 +1,4 @@
-baseurl = "https://kbenoit.github.io/TAUR/"
+baseurl = "https://kbenoit.github.io/TAUR-Hugo/"
 languageCode = "en-uk"
 title = "Text Analysis Using R"
 theme = "hugo-material-docs"
@@ -15,7 +15,7 @@ googleAnalytics = ""
 
 	# Repository
 	provider = "GitHub"
-	repo_url = "https://github.com/kbenoit/TAUR"
+	repo_url = "https://github.com/kbenoit/TAUR-Hugo"
 
 	version = "1.0.0"
 	logo = "images/logo.png"
