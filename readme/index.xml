@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Readmes on Text Analysis Using R</title>
-    <link>https://kbenoit.github.io/TAUR/readme/</link>
+    <link>https://kbenoit.github.io/TAUR-Hugo/readme/</link>
     <description>Recent content in Readmes on Text Analysis Using R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <atom:link href="https://kbenoit.github.io/TAUR/readme/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kbenoit.github.io/TAUR-Hugo/readme/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title></title>
-      <link>https://kbenoit.github.io/TAUR/readme/</link>
+      <link>https://kbenoit.github.io/TAUR-Hugo/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kbenoit.github.io/TAUR/readme/</guid>
+      <guid>https://kbenoit.github.io/TAUR-Hugo/readme/</guid>
       <description>
 
 &lt;p&gt;See the &lt;a href=&#34;http://htmlpreview.github.com/?https://github.com/kbenoit/quanteda/blob/master/vignettes/quickstart.html&#34;&gt;Getting Started Vignette&lt;/a&gt;.&lt;/p&gt;

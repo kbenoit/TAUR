@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Adding-contents on Text Analysis Using R</title>
-    <link>https://kbenoit.github.io/TAUR/adding-content/</link>
+    <link>https://kbenoit.github.io/TAUR-Hugo/adding-content/</link>
     <description>Recent content in Adding-contents on Text Analysis Using R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
     <lastBuildDate>Wed, 09 Mar 2016 19:56:50 +0100</lastBuildDate>
-    <atom:link href="https://kbenoit.github.io/TAUR/adding-content/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kbenoit.github.io/TAUR-Hugo/adding-content/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Adding content</title>
-      <link>https://kbenoit.github.io/TAUR/adding-content/</link>
+      <link>https://kbenoit.github.io/TAUR-Hugo/adding-content/</link>
       <pubDate>Wed, 09 Mar 2016 19:56:50 +0100</pubDate>
       
-      <guid>https://kbenoit.github.io/TAUR/adding-content/</guid>
+      <guid>https://kbenoit.github.io/TAUR-Hugo/adding-content/</guid>
       <description>
 
 &lt;h2 id=&#34;hello-world&#34;&gt;Hello world&lt;/h2&gt;

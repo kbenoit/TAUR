@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Licenses on Text Analysis Using R</title>
-    <link>https://kbenoit.github.io/TAUR/license/</link>
+    <link>https://kbenoit.github.io/TAUR-Hugo/license/</link>
     <description>Recent content in Licenses on Text Analysis Using R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
     <lastBuildDate>Wed, 09 Mar 2016 20:10:46 +0100</lastBuildDate>
-    <atom:link href="https://kbenoit.github.io/TAUR/license/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kbenoit.github.io/TAUR-Hugo/license/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>License</title>
-      <link>https://kbenoit.github.io/TAUR/license/</link>
+      <link>https://kbenoit.github.io/TAUR-Hugo/license/</link>
       <pubDate>Wed, 09 Mar 2016 20:10:46 +0100</pubDate>
       
-      <guid>https://kbenoit.github.io/TAUR/license/</guid>
+      <guid>https://kbenoit.github.io/TAUR-Hugo/license/</guid>
       <description>&lt;p&gt;Copyright &amp;copy; 2016 Digitalcraftsman &lt;a href=&#34;mailto:digitalcraftsman@protonmail.com&#34;&gt;digitalcraftsman@protonmail.com&lt;/a&gt;&lt;br&gt;
 Copyright &amp;copy; 2016 Martin Donath &lt;a href=&#34;mailto:martin.donath@squidfunk.com&#34;&gt;martin.donath@squidfunk.com&lt;/a&gt;&lt;/p&gt;
 

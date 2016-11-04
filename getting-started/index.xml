@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Getting-starteds on Text Analysis Using R</title>
-    <link>https://kbenoit.github.io/TAUR/getting-started/</link>
+    <link>https://kbenoit.github.io/TAUR-Hugo/getting-started/</link>
     <description>Recent content in Getting-starteds on Text Analysis Using R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
     <lastBuildDate>Wed, 09 Mar 2016 00:11:02 +0100</lastBuildDate>
-    <atom:link href="https://kbenoit.github.io/TAUR/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kbenoit.github.io/TAUR-Hugo/getting-started/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Getting started</title>
-      <link>https://kbenoit.github.io/TAUR/getting-started/</link>
+      <link>https://kbenoit.github.io/TAUR-Hugo/getting-started/</link>
       <pubDate>Wed, 09 Mar 2016 00:11:02 +0100</pubDate>
       
-      <guid>https://kbenoit.github.io/TAUR/getting-started/</guid>
+      <guid>https://kbenoit.github.io/TAUR-Hugo/getting-started/</guid>
       <description>
 
 &lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
@@ -160,7 +160,7 @@ material design &lt;a href=&#34;http://www.materialui.co/colors&#34;&gt;color pa
 green&lt;/em&gt;, &lt;em&gt;lime&lt;/em&gt;, &lt;em&gt;yellow&lt;/em&gt;, &lt;em&gt;amber&lt;/em&gt;, &lt;em&gt;orange&lt;/em&gt;, &lt;em&gt;deep orange&lt;/em&gt;, &lt;em&gt;brown&lt;/em&gt;, &lt;em&gt;grey&lt;/em&gt; and
 &lt;em&gt;blue grey&lt;/em&gt;. The last three colors can only be used as a primary color.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://kbenoit.github.io/TAUR/images/colors.png&#34; alt=&#34;Color palette&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://kbenoit.github.io/TAUR-Hugo/images/colors.png&#34; alt=&#34;Color palette&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;If the color is set via this configuration, an additional CSS file called
 &lt;code&gt;palettes.css&lt;/code&gt; is included that defines the color palettes.&lt;/p&gt;
