@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Text Analysis Using R</title>
-    <link>https://kbenoit.github.io/TAUR/</link>
+    <link>https://kbenoit.github.io/TAUR-Hugo/</link>
     <description>Recent content on Text Analysis Using R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
     <lastBuildDate>Wed, 09 Mar 2016 20:10:46 +0100</lastBuildDate>
-    <atom:link href="https://kbenoit.github.io/TAUR/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kbenoit.github.io/TAUR-Hugo/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>License</title>
-      <link>https://kbenoit.github.io/TAUR/license/</link>
+      <link>https://kbenoit.github.io/TAUR-Hugo/license/</link>
       <pubDate>Wed, 09 Mar 2016 20:10:46 +0100</pubDate>
       
-      <guid>https://kbenoit.github.io/TAUR/license/</guid>
+      <guid>https://kbenoit.github.io/TAUR-Hugo/license/</guid>
       <description>&lt;p&gt;Copyright &amp;copy; 2016 Digitalcraftsman &lt;a href=&#34;mailto:digitalcraftsman@protonmail.com&#34;&gt;digitalcraftsman@protonmail.com&lt;/a&gt;&lt;br&gt;
 Copyright &amp;copy; 2016 Martin Donath &lt;a href=&#34;mailto:martin.donath@squidfunk.com&#34;&gt;martin.donath@squidfunk.com&lt;/a&gt;&lt;/p&gt;
 
@@ -40,10 +40,10 @@ IN THE SOFTWARE.&lt;/p&gt;
     
     <item>
       <title>Roadmap</title>
-      <link>https://kbenoit.github.io/TAUR/roadmap/</link>
+      <link>https://kbenoit.github.io/TAUR-Hugo/roadmap/</link>
       <pubDate>Wed, 09 Mar 2016 20:08:11 +0100</pubDate>
       
-      <guid>https://kbenoit.github.io/TAUR/roadmap/</guid>
+      <guid>https://kbenoit.github.io/TAUR-Hugo/roadmap/</guid>
       <description>
 
 &lt;p&gt;Quo vadis? The port of the original &lt;a href=&#34;https://github.com/squidfunk/mkdocs-material&#34;&gt;Material theme&lt;/a&gt; has replicated nearly all of its features. A few are still missing but I&amp;rsquo;ve good news: the Hugo community is actively working on this issues. Maybe with the next release of Hugo we can abandon this list. Stay tuned.&lt;/p&gt;
@@ -72,10 +72,10 @@ IN THE SOFTWARE.&lt;/p&gt;
     
     <item>
       <title>Adding content</title>
-      <link>https://kbenoit.github.io/TAUR/adding-content/</link>
+      <link>https://kbenoit.github.io/TAUR-Hugo/adding-content/</link>
       <pubDate>Wed, 09 Mar 2016 19:56:50 +0100</pubDate>
       
-      <guid>https://kbenoit.github.io/TAUR/adding-content/</guid>
+      <guid>https://kbenoit.github.io/TAUR-Hugo/adding-content/</guid>
       <description>
 
 &lt;h2 id=&#34;hello-world&#34;&gt;Hello world&lt;/h2&gt;
@@ -136,10 +136,10 @@ Nothing to see here, move along.
     
     <item>
       <title>Getting started</title>
-      <link>https://kbenoit.github.io/TAUR/getting-started/</link>
+      <link>https://kbenoit.github.io/TAUR-Hugo/getting-started/</link>
       <pubDate>Wed, 09 Mar 2016 00:11:02 +0100</pubDate>
       
-      <guid>https://kbenoit.github.io/TAUR/getting-started/</guid>
+      <guid>https://kbenoit.github.io/TAUR-Hugo/getting-started/</guid>
       <description>
 
 &lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
@@ -285,7 +285,7 @@ material design &lt;a href=&#34;http://www.materialui.co/colors&#34;&gt;color pa
 green&lt;/em&gt;, &lt;em&gt;lime&lt;/em&gt;, &lt;em&gt;yellow&lt;/em&gt;, &lt;em&gt;amber&lt;/em&gt;, &lt;em&gt;orange&lt;/em&gt;, &lt;em&gt;deep orange&lt;/em&gt;, &lt;em&gt;brown&lt;/em&gt;, &lt;em&gt;grey&lt;/em&gt; and
 &lt;em&gt;blue grey&lt;/em&gt;. The last three colors can only be used as a primary color.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://kbenoit.github.io/TAUR/images/colors.png&#34; alt=&#34;Color palette&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://kbenoit.github.io/TAUR-Hugo/images/colors.png&#34; alt=&#34;Color palette&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;If the color is set via this configuration, an additional CSS file called
 &lt;code&gt;palettes.css&lt;/code&gt; is included that defines the color palettes.&lt;/p&gt;
@@ -364,10 +364,10 @@ accounts to the drawer by setting the variables &lt;code&gt;github&lt;/code&gt; 
     
     <item>
       <title>Material for Hugo</title>
-      <link>https://kbenoit.github.io/TAUR/</link>
+      <link>https://kbenoit.github.io/TAUR-Hugo/</link>
       <pubDate>Tue, 08 Mar 2016 21:07:13 +0100</pubDate>
       
-      <guid>https://kbenoit.github.io/TAUR/</guid>
+      <guid>https://kbenoit.github.io/TAUR-Hugo/</guid>
       <description>
 
 &lt;h2 id=&#34;text-analysis-using-r&#34;&gt;Text Analysis Using R&lt;/h2&gt;
@@ -380,7 +380,7 @@ accounts to the drawer by setting the variables &lt;code&gt;github&lt;/code&gt; 
 guidelines, fully responsive, optimized for touch and pointer devices as well
 as all sorts of screen sizes.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://kbenoit.github.io/TAUR/images/screen.png&#34; alt=&#34;Material Screenshot&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://kbenoit.github.io/TAUR-Hugo/images/screen.png&#34; alt=&#34;Material Screenshot&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Material is very lightweight – it is built from scratch using Javascript and
 CSS that weighs less than 30kb (minified, gzipped and excluding Google Fonts
@@ -399,7 +399,7 @@ browsers.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Beautiful, readable and very user-friendly design based on Google&amp;rsquo;s material
 design guidelines, packed in a full responsive template with a well-defined
-and &lt;a href=&#34;https://kbenoit.github.io/TAUR/getting-started/#changing-the-color-palette&#34;&gt;easily customizable color palette&lt;/a&gt;, great typography, as well as a
+and &lt;a href=&#34;https://kbenoit.github.io/TAUR-Hugo/getting-started/#changing-the-color-palette&#34;&gt;easily customizable color palette&lt;/a&gt;, great typography, as well as a
 beautiful search interface and footer.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Well-tested and optimized Javascript and CSS including a cross-browser
@@ -407,15 +407,15 @@ fixed/sticky header, a drawer that even works without Javascript using
 the &lt;a href=&#34;http://tutorialzine.com/2015/08/quick-tip-css-only-dropdowns-with-the-checkbox-hack/&#34;&gt;checkbox hack&lt;/a&gt; with fallbacks, responsive tables that scroll when
 the screen is too small and well-defined print styles.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Extra configuration options like a &lt;a href=&#34;https://kbenoit.github.io/TAUR/getting-started/#adding-a-logo&#34;&gt;project logo&lt;/a&gt;, links to the authors
-&lt;a href=&#34;https://kbenoit.github.io/TAUR/getting-started/#adding-a-github-and-twitter-account&#34;&gt;GitHub and Twitter accounts&lt;/a&gt; and display of the amount of stars the
+&lt;li&gt;&lt;p&gt;Extra configuration options like a &lt;a href=&#34;https://kbenoit.github.io/TAUR-Hugo/getting-started/#adding-a-logo&#34;&gt;project logo&lt;/a&gt;, links to the authors
+&lt;a href=&#34;https://kbenoit.github.io/TAUR-Hugo/getting-started/#adding-a-github-and-twitter-account&#34;&gt;GitHub and Twitter accounts&lt;/a&gt; and display of the amount of stars the
 project has on GitHub.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Web application capability on iOS – when the page is saved to the homescreen,
 it behaves and looks like a native application.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;See the &lt;a href=&#34;https://kbenoit.github.io/TAUR/getting-started/&#34;&gt;getting started guide&lt;/a&gt; for instructions how to get
+&lt;p&gt;See the &lt;a href=&#34;https://kbenoit.github.io/TAUR-Hugo/getting-started/&#34;&gt;getting started guide&lt;/a&gt; for instructions how to get
 it up and running.&lt;/p&gt;
 
 &lt;h2 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h2&gt;
@@ -428,10 +428,10 @@ it up and running.&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://kbenoit.github.io/TAUR/readme/</link>
+      <link>https://kbenoit.github.io/TAUR-Hugo/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kbenoit.github.io/TAUR/readme/</guid>
+      <guid>https://kbenoit.github.io/TAUR-Hugo/readme/</guid>
       <description>
 
 &lt;p&gt;See the &lt;a href=&#34;http://htmlpreview.github.com/?https://github.com/kbenoit/quanteda/blob/master/vignettes/quickstart.html&#34;&gt;Getting Started Vignette&lt;/a&gt;.&lt;/p&gt;
